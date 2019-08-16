@@ -10,141 +10,45 @@
 	display: table;
 	clear: both;
 }
-/* Nav Bar attributes*/
-#header-1{
-	display: inline-block;
-	position: fixed;
-	background-color: #F5F5F5;
+#nav-box{
 	width: 100%;
-	height: 3em;
+	height: 100px;
+	background-color: orange;
 }
-
-.top-left-nav {
-	float: left;
-	padding-top: 10px;
-}
-
-.top-middle-nav {
-	position: relative;
-	left: 25%;
-	top: 22%;
-}
-
-.btn-box-right{
-	bottom: 20px;
-}
-
-#btn-subscribe{
-	position: relative;
-	float: right;
-	margin-left: 10px;
-	margin-right: 15px;
-}
-#btn-login{
-	position: relative;
-	float: right;
-}
-/* Buttons right corner "Suscribe Now" & "Log In"*/
-button{
-	-moz-border-radius:5px;
-	-webkit-border-radius:5px;
-}
-
-.button-header-right{
-	display: inline-block;
-	padding: 4px 4px 5px 5px;
-	/*----- btn generator ----*/
-	background-color:#6288a5;
-	border-radius:3px;
-	border:1px solid #326891;
-	cursor:pointer;
-	color:#ffffff;
-	font-weight:bold;
-	text-decoration:none;
-	text-shadow:0px -1px 0px #2b665e;
-}
-
-.top-left-btn{
-	border: 0;
-	background-color: #F5F5F5;
-}
-
-.dict {
-	position: relative;
-	display: inline-block;
-	background-image: url(images/sprite.svg);    
-	width: 16px;
-	height: 20px;
-	margin-right: 10px;
-	left: 5px;
-	top: 3px;
-}
-
-#search-button {
-      background-position: -456px -210px;
- }
-
-#hamburger-button {
-    background-position: -35px -243px;
-}
-
-.space-and-cosmos {
-	font-size: 14px;
-	font-weight: 700;
-	color: black;
-	text-decoration: none;
-	text-transform: uppercase;
-	margin: 0 15px;
-}
-.space-and-cosmos:hover {
-    text-decoration: underline;
-}
-/* End of Nav Bar attributes*/
-
-/* Article properties */
-
-#main-img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 80%;
-}
-
- #alt-text {
-	 max-width: 615px;
-	 font-size: 0.875rem;
-       color: #666;
-    line-height: 1.125rem;
-    font-weight: 300;
-    font-style: normal;
-    font-family: "nyt-cheltenham-sh",georgia,"times new roman",times,serif;
-
- }
-
-/* End of article properties */
-
-/* Init of Body*/
-.container{
+#master-header{
 	position: absolute;
 	width: 100%;
-	height: 100%;
+	height: 300px;
 	background-color: gray;
 }
-main h1:first-child {
-	font-size: 2.125rem;
-    line-height: 38px;
-    line-height: 2.375rem;
-    font-weight: 700;
-    font-style: normal;
-    font-family: "nyt-cheltenham",georgia,"times new roman",times,serif;
-    font-style: italic;
-	padding-bottom: 8px;
-	text-align: center;
+#big-box{
+	width: 100%;
+	height: 2000px;
+	background-color: pink;
 }
 
-#main-title-container{
-	margin-top: 75px;
-	width: 100%;
-	height: 50px;
+#blue-box{
+	left: 50px;
+	width: 100px;
+	height: 150px;
+	background-color: blue;
+	display: inline-block;
 }
-/* End of Body*/
+#green-box{
+	width: 100px;
+	height: 150px;
+	background-color: green;
+	display: inline-block;
+}
+#purple-box{
+	width: 100px;
+	height: 150px;
+	background-color: purple;
+	display: inline-block;
+}
+#yellow-box{
+	width: 100px;
+	height: 150px;
+	background-color: yellow;
+	display: inline-block;
+}

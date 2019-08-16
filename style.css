@@ -10,12 +10,15 @@
 	display: table;
 	clear: both;
 }
-#nav-box{
+#nav-box {
+	position: fixed;
 	width: 100%;
 	height: 100px;
 	background-color: orange;
+	z-index: 1;
 }
 #master-header{
+	top: 100px;
 	position: absolute;
 	width: 100%;
 	height: 300px;
@@ -28,21 +31,23 @@
 }
 
 #blue-box{
-	left: 50px;
-	width: 100px;
-	height: 150px;
+	float: left;
+	width: 33.33%;
+	height: 100px;
 	background-color: blue;
 	display: inline-block;
 }
 #green-box{
-	width: 100px;
-	height: 150px;
+	float: left;
+	width: 33.33%;
+	height: 100px;
 	background-color: green;
 	display: inline-block;
 }
 #purple-box{
-	width: 100px;
-	height: 150px;
+	float: left;
+	width: 33.33%;
+	height: 100px;
 	background-color: purple;
 	display: inline-block;
 }

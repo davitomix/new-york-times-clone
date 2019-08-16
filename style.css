@@ -12,6 +12,7 @@
 }
 /* Nav Bar attributes*/
 #header-1{
+	display: inline-block;
 	position: fixed;
 	background-color: #F5F5F5;
 	width: 100%;
@@ -63,8 +64,9 @@ button{
 	text-shadow:0px -1px 0px #2b665e;
 }
 
-.button-left-header{
-
+.top-left-btn{
+	border: 0;
+	background-color: #F5F5F5;
 }
 
 .dict {
@@ -99,6 +101,28 @@ button{
 }
 /* End of Nav Bar attributes*/
 
+/* Article properties */
+
+#main-img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+}
+
+ #alt-text {
+	 max-width: 615px;
+	 font-size: 0.875rem;
+       color: #666;
+    line-height: 1.125rem;
+    font-weight: 300;
+    font-style: normal;
+    font-family: "nyt-cheltenham-sh",georgia,"times new roman",times,serif;
+
+ }
+
+/* End of article properties */
+
 /* Init of Body*/
 .container{
 	position: absolute;
@@ -119,8 +143,7 @@ main h1:first-child {
 }
 
 #main-title-container{
-	position: absolute;
-	top: 75px;
+	margin-top: 75px;
 	width: 100%;
 	height: 50px;
 }

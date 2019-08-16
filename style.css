@@ -1,0 +1,33 @@
+* {
+
+}
+
+.container {
+
+}
+
+/* Nav Bar attributes*/
+
+.nav-container {
+	poistion: fixed;
+}
+
+.top-nav-bar {
+
+}
+
+.top-left-nav {
+	float: left;
+}
+
+.top-middle-nav {
+	text-align: center;
+	poistion: relative;
+}
+
+.top-right-nav {
+	float: right;
+}
+
+
+/* End of Nar Bar attributes*/

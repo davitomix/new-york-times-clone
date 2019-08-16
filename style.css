@@ -1,19 +1,26 @@
 * {
-
+	padding: 0;
+	margin: 0;
+	font-family:  sans-serif;
+	box-sizing: border-box;
 }
+/* Clear fix */
+.container::after{
+	content: "";
+	display: table;
+	clear: both;
+}
+
 
 .container {
 
 }
 
 /* Nav Bar attributes*/
-
-.nav-container {
-	poistion: fixed;
-}
-
-.top-nav-bar {
-
+#header-1{
+	background-color: #F5F5F5;
+	width: 100%;
+	height: 3em;
 }
 
 .top-left-nav {
@@ -21,13 +28,42 @@
 }
 
 .top-middle-nav {
-	text-align: center;
-	poistion: relative;
+	position: relative;
+	left: 25%;
+	top: 22%;
 }
 
-.top-right-nav {
+.btn-box-right{
+	bottom: 22px;
+}
+
+#btn-subscribe{
+	position: relative;
+	float: right;
+	margin-left: 10px;
+	margin-right: 15px;
+}
+#btn-login{
+	position: relative;
 	float: right;
 }
+/* Buttons right corner "Suscribe Now" & "Log In"*/
+button{
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+}
 
-
+.button-header{
+	display: inline-block;
+	padding: 4px 4px 5px 5px;
+	/*----- btn generator ----*/
+	background-color:#6288a5;
+	border-radius:3px;
+	border:1px solid #326891;
+	cursor:pointer;
+	color:#ffffff;
+	font-weight:bold;
+	text-decoration:none;
+	text-shadow:0px -1px 0px #2b665e;
+}
 /* End of Nar Bar attributes*/

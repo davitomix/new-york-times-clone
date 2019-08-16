@@ -5,25 +5,74 @@
 	box-sizing: border-box;
 }
 /* Clear fix */
-.container::after{
+.body::after{
 	content: "";
 	display: table;
 	clear: both;
 }
-
-
-.container {
-
+/* Nav Bar attributes*/
+#header-1{
+	position: fixed;
+	background-color: #F5F5F5;
+	width: 100%;
+	height: 3em;
 }
 
-/* Nav Bar attributes*/
+.top-left-nav {
+	float: left;
+	padding-top: 10px;
+}
+
+.top-middle-nav {
+	position: relative;
+	left: 25%;
+	top: 22%;
+}
+
+.btn-box-right{
+	bottom: 20px;
+}
+
+#btn-subscribe{
+	position: relative;
+	float: right;
+	margin-left: 10px;
+	margin-right: 15px;
+}
+#btn-login{
+	position: relative;
+	float: right;
+}
+/* Buttons right corner "Suscribe Now" & "Log In"*/
+button{
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+}
+
+.button-header-right{
+	display: inline-block;
+	padding: 4px 4px 5px 5px;
+	/*----- btn generator ----*/
+	background-color:#6288a5;
+	border-radius:3px;
+	border:1px solid #326891;
+	cursor:pointer;
+	color:#ffffff;
+	font-weight:bold;
+	text-decoration:none;
+	text-shadow:0px -1px 0px #2b665e;
+}
+
+.button-left-header{
+
+}
 
 .dict {
 	position: relative;
 	display: inline-block;
 	background-image: url(images/sprite.svg);    
 	width: 16px;
-	height: 16px;
+	height: 20px;
 	margin-right: 10px;
 	left: 5px;
 	top: 3px;
@@ -48,56 +97,31 @@
 .space-and-cosmos:hover {
     text-decoration: underline;
 }
-
-#header-1{
-	position: fixed;
-	background-color: #F5F5F5;
-	width: 100%;
-	height: 3em;
-}
-
-.top-left-nav {
-	float: left;
-	padding-top: 10px;
-}
-
-.top-middle-nav {
-	position: relative;
-	left: 25%;
-	top: 22%;
-}
-
-.btn-box-right{
-	bottom: 22px;
-}
-
-#btn-subscribe{
-	position: relative;
-	float: right;
-	margin-left: 10px;
-	margin-right: 15px;
-}
-#btn-login{
-	position: relative;
-	float: right;
-}
-/* Buttons right corner "Suscribe Now" & "Log In"*/
-button{
-	-moz-border-radius:5px;
-	-webkit-border-radius:5px;
-}
-
-.button-header{
-	display: inline-block;
-	padding: 4px 4px 5px 5px;
-	/*----- btn generator ----*/
-	background-color:#6288a5;
-	border-radius:3px;
-	border:1px solid #326891;
-	cursor:pointer;
-	color:#ffffff;
-	font-weight:bold;
-	text-decoration:none;
-	text-shadow:0px -1px 0px #2b665e;
-}
 /* End of Nav Bar attributes*/
+
+/* Init of Body*/
+.container{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background-color: gray;
+}
+main h1:first-child {
+	font-size: 2.125rem;
+    line-height: 38px;
+    line-height: 2.375rem;
+    font-weight: 700;
+    font-style: normal;
+    font-family: "nyt-cheltenham",georgia,"times new roman",times,serif;
+    font-style: italic;
+	padding-bottom: 8px;
+	text-align: center;
+}
+
+#main-title-container{
+	position: absolute;
+	top: 75px;
+	width: 100%;
+	height: 50px;
+}
+/* End of Body*/

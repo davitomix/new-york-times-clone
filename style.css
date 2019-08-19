@@ -10,24 +10,14 @@
 	display: table;
 	clear: both;
 }
+
+/* INIT NAVBAR */
 #nav-box {
 	position: fixed;
 	width: 100%;
-	height: 100px;
+	height: 100px; /*¨42*/
 	background-color: orange;
 	z-index: 1;
-}
-#master-header{
-	top: 100px;
-	position: absolute;
-	width: 100%;
-	height: 300px;
-	background-color: gray;
-}
-#big-box{
-	width: 100%;
-	height: 2000px;
-	background-color: pink;
 }
 
 #blue-box{
@@ -35,25 +25,43 @@
 	width: 33.33%;
 	height: 100px;
 	background-color: blue;
-	display: inline-block;
 }
 #green-box{
 	float: left;
 	width: 33.33%;
-	height: 100px;
+	height: 80px;
 	background-color: green;
-	display: inline-block;
 }
 #purple-box{
 	float: left;
 	width: 33.33%;
 	height: 100px;
 	background-color: purple;
-	display: inline-block;
 }
-#yellow-box{
-	width: 100px;
-	height: 150px;
-	background-color: yellow;
-	display: inline-block;
+/* END NAVBAR */
+
+
+#wrapper{
+	position: absolute;
+	width: 100%;
+	height: 3000px;
+	background-color: pink;
+} 
+
+#master-header{
+	position: absolute;
+	width: 100%;
+	height: 500px;
+	background-color: gray;
 }
+
+#main-info{
+	position: absolute;
+	width: 70%;
+	height: 750px;
+	top: 500px;
+	left: 15%;
+	right: 15%;
+	background-color: black;
+}
+

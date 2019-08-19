@@ -154,8 +154,8 @@
 	position: absolute;
 	top: 35px;
 	width: 100%;
-	height: 750px;
-	background-color: gray;
+	height: 1050px;
+	background-color: white;
 }
 /*Init Childs header-section*/
 #header-title{
@@ -169,13 +169,41 @@
 	position: absolute;
 	left: 15%;
 	top: 25%;
-	width: 100px;
-	height: 100px;;
+	width: 70%;
+	height: 100px;
 }
 
 #header-img img{
-	width: 1125px;
-	height: 632px;
+	width: 100%;
+}
+
+#fig-caption {
+	color: black;
+	background-color: white;
+	position: absolute;
+	top: 1000px;
+	height: 100px;
+	bottom: 0%;
+	left: 15%;
+	right: 15%;
+}
+
+#fig-caption p {
+	max-width: 615px;
+	font-size: 0.875rem;
+	color: #666;
+	line-height: 1.125rem;
+	font-weight: 300;
+	font-style: normal;
+	font-family: "nyt-cheltenham-sh",georgia,"times new roman",times,serif;
+}
+
+
+#credit {	 
+	font-size: 0.6875rem;
+    line-height: 16px;
+    line-height: 1rem;
+    font-weight: 400;
 }
 /*End Childs header-section*/
 /*--------------------------------------------------------------------------*/
@@ -185,7 +213,7 @@
 	position: absolute;
 	width: 70%;
 	height: 750px;
-	top: 500px;
+	top: 1095px;
 	left: 15%;
 	right: 15%;
 	background-color: black;

@@ -17,7 +17,7 @@
 	position: absolute;
 	width: 100%;
 	height: 4000px;
-	//background-color: pink;
+	background-color: pink;
 } 
 /*--------------------------------------------------------------------------*/
 
@@ -28,8 +28,8 @@
 #nav-box {
 	position: fixed;
 	width: 100%;
-	height: 50px; /*¨42*/
-	//background-color: orange;
+	height: 35px; /*¨42*/
+	/*background-color: orange;*/
 	z-index: 1;
 }
 /*--------------------------------------------------------------------------*/
@@ -40,7 +40,8 @@
 .navbar-boxes{
 	position: absolute;
 	width: 33.33%;
-	height: 50px;
+	height: 35px;
+
 }
 /*--------------------------------------------------------------------------*/
 
@@ -50,28 +51,29 @@
 
 #left-box{
 	left: 0;
-	//background-color: white;
+	background-color: white;
 }
 /*Init Childs left-box*/
 #btn-left{
 	position: absolute;
-	left: 25px;
+	left: 20px;
 	border: white;
 	background-color: white;
-	top: 15%;
+	top: 30%;
 }
 
 #btn-mid{
 	position: absolute;
-	left: 50px;
+	left: 55px;
 	border: white;
 	background-color: white;
-	top: 15%;
+	top: 30%;
 }
 
 #space-cosmos{
 	position: absolute;
-	left: 75px;
+	left: 87px;
+	top: 15%;
 }
 
 #space {
@@ -82,7 +84,7 @@
     font-style: normal;
 	letter-spacing: 0.05em;
 	color: #000;
-	font-size: 0.8125rem;
+	font-size: 0.7125rem;
 	padding-bottom: 25px;
 	margin-top: 7px;
 	text-decoration: none;
@@ -96,9 +98,14 @@
 /*--------------------------------------------------------------------------*/
 #mid-box{
 	left: 33.33%;
-	background-color: green;
+	background-color:white;
 }
 /*Init Childs mid-box*/
+#nyt-title{
+	position: absolute;
+	left: 35%;
+	top: 15%;
+}
 /*End Childs mid-box*/
 /*--------------------------------------------------------------------------*/
 
@@ -108,9 +115,32 @@
 /*--------------------------------------------------------------------------*/
 #right-box{
 	left: 66.66%;
-	background-color: purple;
+	background-color: white;
 }
 /*Init Childs right-box*/
+#right-box button{
+	position: absolute;
+	right: 25%;
+	top: 10%;
+	height: 28px;
+	width: 50px;
+	background-color: #6288A5;
+	border: 1px solid #4D7B9F;
+	border-radius: 5px;
+}
+
+#right-box button:hover, #left-box button:hover { cursor: pointer; }
+
+
+#right-box P{
+	position: absolute;
+	font-family: sans-serif;
+	color: white;
+	font-weight: bold;
+	font-size: .71em;
+	left: 15%;
+	top: 45%;
+}
 /*End Childs right-box*/
 /*--------------------------------------------------------------------------*/
 /* END NAVBAR */
@@ -122,10 +152,32 @@
 /*father*/
 #header-section { 
 	position: absolute;
+	top: 35px;
 	width: 100%;
-	height: 500px;
-	//background-color: gray;
+	height: 750px;
+	background-color: gray;
 }
+/*Init Childs header-section*/
+#header-title{
+	position: absolute;
+	left: 35%;
+	top: 5%;
+	height: 100px;
+}
+
+#header-img{
+	position: absolute;
+	left: 15%;
+	top: 25%;
+	width: 100px;
+	height: 100px;;
+}
+
+#header-img img{
+	width: 1125px;
+	height: 632px;
+}
+/*End Childs header-section*/
 /*--------------------------------------------------------------------------*/
 /* END HEADER-SECTION */
 

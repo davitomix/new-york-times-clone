@@ -10,12 +10,12 @@
 	--headerSectionheight: 24%;
 	--compensation-constant: 1.1%;
 	--top-main-info-1: 25.1%;
-	--main-Info1-height: 20%;
-	--top-main-info-2: 45.1%;
+	--main-Info1-height: 70%;
+	--top-main-info-2: 100%;
 	--main-Info2-height: 20%;
-	--top-more-section: 65.1%;
+	--top-more-section: 100%;
 	--main-more-height: 20%;
-	--top-footer: 85.1%;
+	--top-footer: 100%;
 	--footer-height: 5%;
 }
 /* Clear fix */
@@ -241,9 +241,9 @@
 #article-1 {
 	position: absolute;
 	width: 50%;
-	height: 88%;
+	height: 65%;
 	left: 25%;
-	top: 12%;
+	top: 3%;
 	background-color: white;
 }
 
@@ -259,7 +259,7 @@
 #header-info1{
 	position: absolute;	
 	width: 100%;
-	height: 12%;
+	height: 3%;
 	left: 0;
 	top: 0;
 	background-color: orange;
@@ -283,6 +283,46 @@
 	right: 25%;
 	bottom: 0;
 	background-color: teal;
+}
+
+#img-header-2 {
+	position: absolute;	
+	width: 100%;
+	height: 3%;
+	left: 0;
+	top: 68%;
+	background-color: orange;
+}
+
+#img-header-2 h2 {
+	font-size: 1.25rem;
+    line-height: 24px;
+    line-height: 1.5rem;
+    font-weight: 700;
+    font-style: normal;
+    font-family: "nyt-cheltenham",georgia,"times new roman",times,serif;
+    margin-bottom: 3px;
+    color: #333;
+	
+}
+
+#img-header-2 p {	
+	font-size: 0.875rem;
+    line-height: 1.125rem;
+    font-weight: 400;
+    font-style: normal;
+    font-family: "nyt-cheltenham-sh",georgia,"times new roman",times,serif;
+    margin-bottom: 10px;
+    color: #666;
+}
+
+#img-2 {
+	position: absolute;	
+	width: 100%;
+	height: 14%;
+	left: 0;
+	top: 100%;
+	background-color: greenyellow;
 }
 
 #main-info-2 {

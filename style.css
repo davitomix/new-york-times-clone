@@ -1,141 +1,55 @@
 * {
-	padding: 0;
-	margin: 0;
-	font-family:  sans-serif;
-	box-sizing: border-box;
+	box-sizing: border-box; 
 }
-/* Clear fix */
-.body::after{
-	content: "";
-	display: table;
-	clear: both;
+  
+body {
+	display: flex;
+	min-height: 100vh;
+	flex-direction: column;
+	margin: 0;
 }
 
-/* INIT NAVBAR */
-#nav-box {
+/* Nav bar properties */
+
+.flex-container {
 	position: fixed;
 	width: 100%;
-	height: 100px; /*¨42*/
-	background-color: orange;
-	z-index: 1;
+	display: flex;
+	background-color: DodgerBlue;
+	float: left;
+}
+  
+.flex-container > div {
+	background-color: #f1f1f1;
+	margin: 10px;
+	padding: 20px;
+	font-size: 30px;
+	width: 33.33%;
+	float: left;
 }
 
-#blue-box{
-	float: left;
-	width: 33.33%;
-	height: 100px;
-	background-color: blue;
-}
-#green-box{
-	float: left;
-	width: 33.33%;
-	height: 80px;
-	background-color: green;
-}
-#purple-box{
-	float: left;
-	width: 33.33%;
-	height: 100px;
-	background-color: purple;
-}
-/* END NAVBAR */
+/* Article properties */
 
-
-#wrapper{
-	position: absolute;
-	width: 100%;
+#main > article {
+	flex: 1;
+	background: grey;
+	padding: 1em;
+	width: 33%;
 	height: 4000px;
-	background-color: pink;
-} 
-
-#master-header { 
-	position: absolute;
-	width: 100%;
-	height: 500px;
-	background-color: gray;
-}
-
-#main-info-1 {
-	position: absolute;
-	width: 70%;
-	height: 750px;
-	top: 500px;
-	left: 15%;
-	right: 15%;
-	background-color: black;
-}
-
-#article-1 {
+	align-self: center;
 	float: left;
-	width: 66.66%;
-	height: 100%;
-	background-color: white;
 }
 
-#aside {
-	position: absolute;
-	left: 66.66%;
-	top: 30%;
+#main > aside {
+	flex: 0 0 20vw;
+	background: beige;
+	padding: 1em;
+	float: right;
 	width: 33.33%;
-	height: 25%;
-	background-color: brown;
-}
+	height: 4000px;
+  }
 
-#img {
-	position: absolute;	
-	width: 100%;
-	height: 750px;
-	top: 750px;
-	background-color: orange;
+footer {
+	background: yellowgreen;
+	height: 20vh;
 }
-
-#img-cap {
-	height: 100px;
-	background-color: red;
-}
-
-#image {
-	height: 100%;
-	background-color: teal;
-}
-
-#main-info-2 {
-	position: absolute;
-	width: 70%;
-	height: 750px;
-	top: 2000px;
-	left: 15%;
-	right: 15%;
-	background-color: white;
-}
-
-#article-2 {
-	float: left;
-	width: 66.66%;
-	height: 100%;
-	background-color: grey;
-}
-
-#more {
-	position: absolute;
-	width: 70%;
-	height: 750px;
-	top: 2750px;
-	left: 15%;
-	right: 15%;
-	background-color: green;	
-}
-
-#left-more {
-	float: left;
-	width: 66.66%;
-	height: 100%;
-	background-color: orange;
-}
-
-#right-more {
-	position: absolute;
-	left: 66.66%;
-	width: 33.33%;
-	height: 100%;
-	background-color: yellow;

@@ -4,6 +4,20 @@
 	font-family:  sans-serif;
 	box-sizing: border-box;
 }
+/* Variables */
+:root{
+	--wrapperHeight: 3300px;
+	--headerSectionheight: 24%;
+	--compensation-constant: 1.1%;
+	--top-main-info-1: 25.1%;
+	--main-Info1-height: 20%;
+	--top-main-info-2: 45.1%;
+	--main-Info2-height: 20%;
+	--top-more-section: 65.1%;
+	--main-more-height: 20%;
+	--top-footer: 85.1%;
+	--footer-height: 5%;
+}
 /* Clear fix */
 .body::after{
 	content: "";
@@ -16,7 +30,7 @@
 #wrapper{
 	position: absolute;
 	width: 100%;
-	height: 4000px;
+	height: var(--wrapperHeight);
 	background-color: pink;
 } 
 /*--------------------------------------------------------------------------*/
@@ -41,7 +55,6 @@
 	position: absolute;
 	width: 33.33%;
 	height: 35px;
-
 }
 /*--------------------------------------------------------------------------*/
 
@@ -56,24 +69,24 @@
 /*Init Childs left-box*/
 #btn-left{
 	position: absolute;
-	left: 20px;
-	border: white;
-	background-color: white;
+	left: 24%;
 	top: 30%;
+	border: white;
+	background-color: white;;
 }
 
 #btn-mid{
 	position: absolute;
-	left: 55px;
+	left: 30.5%;
+	top: 30%;
 	border: white;
 	background-color: white;
-	top: 30%;
 }
 
 #space-cosmos{
 	position: absolute;
-	left: 87px;
-	top: 15%;
+	left: 37%;
+	top: 9.5%;
 }
 
 #space {
@@ -101,10 +114,12 @@
 	background-color:white;
 }
 /*Init Childs mid-box*/
-#nyt-title{
+#mid-box img{
 	position: absolute;
-	left: 35%;
-	top: 15%;
+	left: 34.5%;
+	top: 19%;
+	width: 31.5%;
+	height: 62.5%;
 }
 /*End Childs mid-box*/
 /*--------------------------------------------------------------------------*/
@@ -122,11 +137,11 @@
 	position: absolute;
 	right: 25%;
 	top: 10%;
-	height: 28px;
+	height: 26px;
 	width: 50px;
 	background-color: #6288A5;
 	border: 1px solid #4D7B9F;
-	border-radius: 5px;
+	border-radius: 2.5px;
 }
 
 #right-box button:hover, #left-box button:hover { cursor: pointer; }
@@ -138,8 +153,8 @@
 	color: white;
 	font-weight: bold;
 	font-size: .71em;
-	left: 15%;
-	top: 45%;
+	left: 17%;
+	top: 35%;
 }
 /*End Childs right-box*/
 /*--------------------------------------------------------------------------*/
@@ -154,46 +169,49 @@
 	position: absolute;
 	top: 35px;
 	width: 100%;
-	height: 1050px;
-	background-color: white;
+	height:var(--headerSectionheight) ;
+	background-color: gray;
 }
 /*Init Childs header-section*/
 #header-title{
 	position: absolute;
-	left: 35%;
-	top: 5%;
+	top: -18%;
+	left: 23%;;
 	height: 100px;
+	width: auto;
 }
 
 #header-img{
 	position: absolute;
-	left: 15%;
-	top: 25%;
-	width: 70%;
-	height: 100px;
+	width: 63%;
+	height: 71%; 
+	left: 18.5%;
+	top: 16.5%;
 }
 
 #header-img img{
 	width: 100%;
+	height: 100%; 
 }
 
 #fig-caption {
+	position: absolute;
 	color: black;
 	background-color: white;
-	position: absolute;
-	top: 1000px;
-	height: 100px;
-	bottom: 0%;
-	left: 15%;
-	right: 15%;
+	height: 60px;
+	width: 100%;
+	bottom: -11%;
 }
 
 #fig-caption p {
-	max-width: 615px;
+	position: relative;
+	top: 15%;
+	display: inline-block;
 	font-size: 0.875rem;
 	color: #666;
-	line-height: 1.125rem;
+	line-height:.5rem;
 	font-weight: 300;
+	text-justify: auto;
 	font-style: normal;
 	font-family: "nyt-cheltenham-sh",georgia,"times new roman",times,serif;
 }
@@ -209,57 +227,69 @@
 /*--------------------------------------------------------------------------*/
 /* END HEADER-SECTION */
 
+
 #main-info-1 {
 	position: absolute;
 	width: 70%;
-	height: 750px;
-	top: 1095px;
+	height: var(--main-Info1-height);
+	top: var(--top-main-info-1);
 	left: 15%;
 	right: 15%;
 	background-color: black;
 }
 
-
-
 #article-1 {
-	float: left;
-	width: 66.66%;
-	height: 100%;
+	position: absolute;
+	width: 50%;
+	height: 88%;
+	left: 25%;
+	top: 12%;
 	background-color: white;
 }
 
 #aside {
 	position: absolute;
-	left: 66.66%;
-	top: 30%;
-	width: 33.33%;
-	height: 25%;
+	width: 15%;
+	height: 15%;
+	right: 5%;
+	top: 40%;
 	background-color: brown;
 }
 
-#img {
+#header-info1{
 	position: absolute;	
 	width: 100%;
-	height: 750px;
-	top: 750px;
+	height: 12%;
+	left: 0;
+	top: 0;
 	background-color: orange;
 }
 
-#img-cap {
+#author {
+	position: absolute;
 	height: 100px;
+	width: 25%;
+	height: 85%;
+	left: 25%;
+	bottom: 0;
 	background-color: red;
 }
 
-#image {
+#social {
+	position: absolute;
 	height: 100%;
+	width: 25%;
+	height: 50%;
+	right: 25%;
+	bottom: 0;
 	background-color: teal;
 }
 
 #main-info-2 {
 	position: absolute;
 	width: 70%;
-	height: 750px;
-	top: 2000px;
+	height: var(--main-Info2-height);
+	top: var(--top-main-info-2);
 	left: 15%;
 	right: 15%;
 	background-color: white;
@@ -275,8 +305,8 @@
 #more-section {
 	position: absolute;
 	width: 70%;
-	height: 750px;
-	top: 2750px;
+	height: var(--main-more-height);
+	top: var(--top-more-section);
 	left: 15%;
 	right: 15%;
 	background-color: green;	
@@ -300,8 +330,8 @@
 #footer-section{
 	position: absolute;
 	width: 70%;
-	height: 250px;
-	top: 3500px;
+	height: var(--footer-height);
+	top: var(--top-footer);
 	left: 15%;
 	right: 15%;
 	background-color: rgb(45, 59, 45);

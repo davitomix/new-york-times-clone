@@ -6,16 +6,16 @@
 }
 /* Variables */
 :root{
-	--wrapperHeight: 3300px;
+	--wrapperHeight: 3500px;
 	--headerSectionheight: 24%;
 	--compensation-constant: 1.1%;
 	--top-main-info-1: 25.1%;
-	--main-Info1-height: 20%;
-	--top-main-info-2: 45.1%;
-	--main-Info2-height: 20%;
-	--top-more-section: 65.1%;
-	--main-more-height: 20%;
-	--top-footer: 85.1%;
+	--main-Info1-height: 10%;
+	--top-main-info-2: 35.1%;
+	--main-Info2-height: 5%;
+	--top-more-section: 40.1%;
+	--main-more-height: 5%;
+	--top-footer: 45.1%;
 	--footer-height: 5%;
 }
 /* Clear fix */

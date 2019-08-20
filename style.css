@@ -1,338 +1,55 @@
 * {
-	padding: 0;
+	box-sizing: border-box; 
+}
+  
+body {
+	display: flex;
+	min-height: 100vh;
+	flex-direction: column;
 	margin: 0;
-	font-family:  sans-serif;
-	box-sizing: border-box;
-}
-/* Variables */
-:root{
-	--wrapperHeight: 3400px;
-	--headerSectionheight: 24%;
-	--compensation-constant: 1.1%;
-	--top-main-info-1: 25.1%;
-	--main-Info1-height: 10%;
-	--top-main-info-2: 35.1%;
-	--main-Info2-height: 5%;
-	--top-more-section: 40%;
-	--main-more-height: 5%;
-	--top-footer: 45.1%;
-	--footer-height: 5%;
-}
-/* Clear fix */
-.body::after{
-	content: "";
-	display: table;
-	clear: both;
 }
 
-/* MAIN CONTAINER WRAPPER*/
-/*--------------------------------------------------------------------------*/
-#wrapper{
-	position: absolute;
-	width: 100%;
-	height: var(--wrapperHeight);
-	background-color: pink;
-} 
-/*--------------------------------------------------------------------------*/
+/* Nav bar properties */
 
-
-/* INIT NAVBAR */
-/*--------------------------------------------------------------------------*/
-/*father*/
-#nav-box {
+.flex-container {
 	position: fixed;
 	width: 100%;
-	height: 35px; /*Â¨42*/
-	/*background-color: orange;*/
-	z-index: 1;
-}
-/*--------------------------------------------------------------------------*/
-
-/*--------------------------------------------------------------------------*/
-/*Navbar boxes -left - mid -right*/
-/*childs of nav-box*/
-.navbar-boxes{
-	position: absolute;
-	width: 33.33%;
-	height: 35px;
-}
-/*--------------------------------------------------------------------------*/
-
-/*--------------------------------------------------------------------------*/
-/*left box*/
-/*--------------------------------------------------------------------------*/
-
-#left-box{
-	left: 0;
-	background-color: white;
-}
-/*Init Childs left-box*/
-#btn-left{
-	position: absolute;
-	left: 24%;
-	top: 30%;
-	border: white;
-	background-color: white;;
-}
-
-#btn-mid{
-	position: absolute;
-	left: 30.5%;
-	top: 30%;
-	border: white;
-	background-color: white;
-}
-
-#space-cosmos{
-	position: absolute;
-	left: 37%;
-	top: 9.5%;
-}
-
-#space {
-	display: block;
-	line-height: 1rem;
-	font-family: "nyt-franklin",arial,helvetica,sans-serif;
-    font-weight: 700;
-    font-style: normal;
-	letter-spacing: 0.05em;
-	color: #000;
-	font-size: 0.7125rem;
-	padding-bottom: 25px;
-	margin-top: 7px;
-	text-decoration: none;
-}
-/*End Childs left-box*/
-/*--------------------------------------------------------------------------*/
-
-
-/*--------------------------------------------------------------------------*/
-/*mid box*/
-/*--------------------------------------------------------------------------*/
-#mid-box{
-	left: 33.33%;
-	background-color:white;
-}
-/*Init Childs mid-box*/
-#mid-box img{
-	position: absolute;
-	left: 34.5%;
-	top: 19%;
-	width: 31.5%;
-	height: 62.5%;
-}
-/*End Childs mid-box*/
-/*--------------------------------------------------------------------------*/
-
-
-/*--------------------------------------------------------------------------*/
-/*right box*/
-/*--------------------------------------------------------------------------*/
-#right-box{
-	left: 66.66%;
-	background-color: white;
-}
-/*Init Childs right-box*/
-#right-box button{
-	position: absolute;
-	right: 25%;
-	top: 10%;
-	height: 26px;
-	width: 50px;
-	background-color: #6288A5;
-	border: 1px solid #4D7B9F;
-	border-radius: 2.5px;
-}
-
-#right-box button:hover, #left-box button:hover { cursor: pointer; }
-
-
-#right-box P{
-	position: absolute;
-	font-family: sans-serif;
-	color: white;
-	font-weight: bold;
-	font-size: .71em;
-	left: 17%;
-	top: 35%;
-}
-/*End Childs right-box*/
-/*--------------------------------------------------------------------------*/
-/* END NAVBAR */
-
-
-
-/* INIT HEADER-SECTION */
-/*--------------------------------------------------------------------------*/
-/*father*/
-#header-section { 
-	position: absolute;
-	top: 35px;
-	width: 100%;
-	height:var(--headerSectionheight) ;
-	background-color: gray;
-}
-/*Init Childs header-section*/
-#header-title{
-	position: absolute;
-	top: -18%;
-	left: 23%;;
-	height: 100px;
-	width: auto;
-}
-
-#header-img{
-	position: absolute;
-	width: 63%;
-	height: 71%; 
-	left: 18.5%;
-	top: 16.5%;
-}
-
-#header-img img{
-	width: 100%;
-	height: 100%; 
-}
-
-#fig-caption {
-	position: absolute;
-	color: black;
-	background-color: white;
-	height: 60px;
-	width: 100%;
-	bottom: -11%;
-}
-
-#fig-caption p {
-	position: relative;
-	top: 15%;
-	display: inline-block;
-	font-size: 0.875rem;
-	color: #666;
-	line-height:.5rem;
-	font-weight: 300;
-	text-justify: auto;
-	font-style: normal;
-	font-family: "nyt-cheltenham-sh",georgia,"times new roman",times,serif;
-}
-
-
-#credit {	 
-	font-size: 0.6875rem;
-    line-height: 16px;
-    line-height: 1rem;
-    font-weight: 400;
-}
-/*End Childs header-section*/
-/*--------------------------------------------------------------------------*/
-/* END HEADER-SECTION */
-
-
-#main-info-1 {
-	position: absolute;
-	width: 70%;
-	height: var(--main-Info1-height);
-	top: var(--top-main-info-1);
-	left: 15%;
-	right: 15%;
-	background-color: black;
-}
-
-#article-1 {
-	position: absolute;
-	width: 50%;
-	height: 88%;
-	left: 25%;
-	top: 12%;
-	background-color: white;
-}
-
-#aside {
-	position: absolute;
-	width: 15%;
-	height: 15%;
-	right: 5%;
-	top: 40%;
-	background-color: brown;
-}
-
-#header-info1{
-	position: absolute;	
-	width: 100%;
-	height: 12%;
-	left: 0;
-	top: 0;
-	background-color: orange;
-}
-
-#author {
-	position: absolute;
-	height: 100px;
-	width: 25%;
-	height: 85%;
-	left: 25%;
-	bottom: 0;
-	background-color: red;
-}
-
-#social {
-	position: absolute;
-	height: 100%;
-	width: 25%;
-	height: 50%;
-	right: 25%;
-	bottom: 0;
-	background-color: teal;
-}
-
-#main-info-2 {
-	position: absolute;
-	width: 70%;
-	height: var(--main-Info2-height);
-	top: var(--top-main-info-2);
-	left: 15%;
-	right: 15%;
-	background-color: white;
-}
-
-#article-2 {
+	display: flex;
+	background-color: DodgerBlue;
 	float: left;
-	width: 66.66%;
-	height: 100%;
-	background-color: grey;
 }
-
-#more-section {
-	position: absolute;
-	width: 70%;
-	height: var(--main-more-height);
-	top: var(--top-more-section);
-	left: 15%;
-	right: 15%;
-	background-color: green;	
-}
-
-#left-more {
-	float: left;
-	width: 66.66%;
-	height: 100%;
-	background-color: rgb(161, 138, 93);
-}
-
-#right-more {
-	position: absolute;
-	left: 66.66%;
+  
+.flex-container > div {
+	background-color: #f1f1f1;
+	margin: 10px;
+	padding: 20px;
+	font-size: 30px;
 	width: 33.33%;
-	height: 100%;
-	background-color: yellow;
+	float: left;
 }
 
-#footer-section{
-	position: absolute;
-	width: 70%;
-	height: var(--footer-height);
-	top: var(--top-footer);
-	left: 15%;
-	right: 15%;
-	background-color: rgb(45, 59, 45);
+/* Article properties */
+
+#main > article {
+	flex: 1;
+	background: grey;
+	padding: 1em;
+	width: 33%;
+	height: 4000px;
+	align-self: center;
+	float: left;
+}
+
+#main > aside {
+	flex: 0 0 20vw;
+	background: beige;
+	padding: 1em;
+	float: right;
+	width: 33.33%;
+	height: 4000px;
+  }
+
+footer {
+	background: yellowgreen;
+	height: 20vh;
 }

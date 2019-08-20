@@ -1,55 +1,85 @@
 * {
-	box-sizing: border-box; 
+	box-sizing: border-box;
+  	margin: 0;
+  	padding: 0;
 }
+
+:root{
+	/*HEIGHT  MAIN CONTAINER*/
+	--HeightBody: 100em;
+	--HeightMainContainer: 100em;
+	/*HEIGHT SECTIONS*/
+	--HeightMainSection: 50em;
+	--HeightArticleSection: 15em;
+	--HeightPreFooterSection: 15em;
+	--HeightFooterSection: 20em;
+}
+
   
 body {
 	display: flex;
 	min-height: 100vh;
+	height: var(--HeightBody);
+	width: 100%;
 	flex-direction: column;
-	margin: 0;
+	margin: 0 auto;
+	background-color: pink;
 }
 
 /* Nav bar properties */
 
-.flex-container {
+.navbar-container {
 	position: fixed;
 	width: 100%;
+	height: 2.3em;
 	display: flex;
 	background-color: DodgerBlue;
-	float: left;
 }
   
-.flex-container > div {
+.navbar-container > div {
 	background-color: #f1f1f1;
-	margin: 10px;
-	padding: 20px;
+	margin: .1em;
 	font-size: 30px;
-	width: 33.33%;
+	width: 33.3%;
+	height: 1em;
 	float: left;
 }
 
-/* Article properties */
-
-#main > article {
-	flex: 1;
-	background: grey;
-	padding: 1em;
-	width: 33%;
-	height: 4000px;
-	align-self: center;
-	float: left;
+/* Main container properties */
+#main-container{
+	display: flex;
+	flex-flow: column wrap;
+	justify-content: flex-start;
+	align-items: center;
+	align-content: space-between;
+	width: 100%;
+	height: var(--HeightMainContainer);
+	margin-top: 2.3em;
+	background-color: gray;
 }
 
-#main > aside {
-	flex: 0 0 20vw;
-	background: beige;
-	padding: 1em;
-	float: right;
-	width: 33.33%;
-	height: 4000px;
-  }
+.section {
+	display: flex;
+	border: 1px solid black;
+}
 
-footer {
-	background: yellowgreen;
-	height: 20vh;
+#main-section{
+	width: 100%;
+	height: var(--HeightMainSection);
+	background-color:lightblue;
+}
+#article-section{
+	width: 100%;
+	height: var(--HeightArticleSection);
+	background-color:lightgreen;
+}
+#prefooter-section{
+	width: 100%;
+	height: var(--HeightPreFooterSection);
+	background-color:lightcoral
+}
+#footer-section{
+	width: 100%;
+	height: var(--HeightFooterSection);
+	background-color:lightcyan;
 }

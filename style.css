@@ -202,11 +202,57 @@ article-section, prefooter-section, footer-section
 }
 
 #main-section{
+	display: block;
 	width: 100%;
 	height: 40em;
 	background-color: #6270be;
 	border: 2px solid #313e86;
+
 }
+
+/* --------------------------------------------------*/
+/* CHILD  -> main-section*/
+
+#header-title-1 {
+	position: relative;
+	left: 12.5%;
+	right: 12.5%;
+	width: 75%;
+	border: 2px solid black;
+	height: 20%;
+	background-color: lightgoldenrodyellow;
+	text-align: center;
+
+}
+
+#header-title-1 > h1 {
+	position: relative;
+	top: 30px;
+	font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+#header-img-1 {
+	position: relative;
+	left: 12.5%;
+	right: 12.5%;
+	width: 75%;
+	border: 2px solid black;
+	height: 50px;
+	background-color: lightgreen;
+}
+
+
+
+#header-caption-1 {
+	position: relative;
+	left: 12.5%;
+	right: 12.5%;
+	width: 75%;
+	border: 2px solid black;
+	height: 50px;
+	background-color: lightsalmon;
+}
+
 #article-section{
 	width: 100%;
 	height: 40em;

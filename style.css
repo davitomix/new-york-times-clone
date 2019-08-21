@@ -5,14 +5,8 @@
 }
 
 :root{
-	/*HEIGHT  MAIN CONTAINER*/
-	--HeightBody: 100em;
 	--HeightMainContainer: 100em;
-	/*HEIGHT SECTIONS*/
-	--HeightMainSection: 50em;
-	--HeightArticleSection: 15em;
-	--HeightPreFooterSection: 15em;
-	--HeightFooterSection: 20em;
+
 }
 
 /* --------------------------------------------------*/
@@ -20,12 +14,6 @@
 /* --------------------------------------------------*/
 /* MASTER FATHER */
 body {
-	display: flex;
-	min-height: 100vh;
-	height: var(--HeightBody);
-	width: 100%;
-	flex-direction: column;
-	margin: 0 auto;
 	background-color: pink;
 }
 /* --------------------------------------------------*/
@@ -42,13 +30,8 @@ body {
 /* CHILD  -> body*/
 .navbar-container {
 	position: fixed;
-	display: flex;
-	flex-flow: row wrap;
-	justify-content: space-around;
-	align-items: center;
+	
 	width: 100%;
-	height: 2.3em;
-	display: flex;
 	background-color: #b4aeae;
 }
 /* --------------------------------------------------*/
@@ -58,21 +41,22 @@ body {
 /* FATHER  -> #burger, #search, #spaces and cosmos*/
 /* CHILD  -> navbar-container*/
 .navbar-sub-container {
-	display: flex;
-	flex-flow: row wrap;
-	justify-content: flex-start;
-	align-items: flex-start;
-	background-color: #b4aeae;
-	width: 33%;
-	height: 80%;
+	position: fixed;
+	height: 40px;
+	float: left;		
+	width: 33.33%;
+	border: 1px solid black;
+	background-color: #b4aeae;	
 }
+
 /* --------------------------------------------------*/
 
 /* ITEMS OF LEFT BAR BOX
 /* --------------------------------------------------*/
 /* CHILD  -> navbar-sub-container*/
+
 #burger-box{
-	position: absolute;
+	position: relative;
 	width: .89em;
 	height: .89em;
 	top: 36.5%;
@@ -80,7 +64,7 @@ body {
 }
 
 #search-box{
-	position: absolute;
+	position: relative;
 	width: .94em;
 	height: .94em;
 	top: 30.9%;
@@ -108,7 +92,7 @@ body {
 }
 
 #spaceandcosmos{
-	position: absolute;
+	position: relative;
 	width: 130px;
 	height: 50%;
 	top: 27.5%;
@@ -130,6 +114,7 @@ body {
 #spaceandcosmos a:hover {
 	text-decoration: underline;
 }
+
 /* --------------------------------------------------*/
 
 
@@ -149,6 +134,7 @@ body {
 	height: 100%;
 	margin: 0;
 }
+/* --------------------------------------------------*/
 /* --------------------------------------------------*/
 
 /* ITEMS OF RIGHT BAR BOX
@@ -183,41 +169,11 @@ body {
 /*---------------------------------------------------*/
 /*---------------------------------------------------*/
 
-
 /* Main container properties */
 #main-container{
-	display: flex;
-	flex-flow: column wrap;
-	justify-content: flex-start;
-	align-items: flex-start;
+	position: absolute;
+	top: 40px;
 	width: 100%;
 	height: var(--HeightMainContainer);
-	margin-top: 2.3em;
 	background-color: gray;
-}
-
-.section {
-	display: flex;
-	border: 5px solid black;
-}
-
-#main-section{
-	width: 100%;
-	height: var(--HeightMainSection);
-	background-color:lightblue;
-}
-#article-section{
-	width: 100%;
-	height: var(--HeightArticleSection);
-	background-color:lightgreen;
-}
-#prefooter-section{
-	width: 100%;
-	height: var(--HeightPreFooterSection);
-	background-color:lightcoral
-}
-#footer-section{
-	width: 100%;
-	height: var(--HeightFooterSection);
-	background-color:lightcyan;
 }

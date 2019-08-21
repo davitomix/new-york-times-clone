@@ -5,15 +5,22 @@
 }
 
 :root{
-	--HeightMainContainer: 100em;
-
+	--HeightMainContainer: 105em;
 }
+
+.clearfix::after {
+	content: "";
+	clear: both;
+	display: table;
+  }
 
 /* --------------------------------------------------*/
 /* --------------------------------------------------*/
 /* --------------------------------------------------*/
 /* MASTER FATHER */
 body {
+	width: 100%;
+	height: var(--HeightMainContainer);
 	background-color: pink;
 }
 /* --------------------------------------------------*/
@@ -29,8 +36,9 @@ body {
 /* FATHER  -> navbar-sub-container*/
 /* CHILD  -> body*/
 .navbar-container {
+	display: inline-block;
+	z-index: 1;
 	position: fixed;
-	
 	width: 100%;
 	background-color: #b4aeae;
 }
@@ -41,11 +49,11 @@ body {
 /* FATHER  -> #burger, #search, #spaces and cosmos*/
 /* CHILD  -> navbar-container*/
 .navbar-sub-container {
-	position: fixed;
-	height: 40px;
-	float: left;		
+	float: left;
+	display: block;
+	height: 40px;		
 	width: 33.33%;
-	border: 1px solid black;
+	border: 0;
 	background-color: #b4aeae;	
 }
 
@@ -57,18 +65,27 @@ body {
 
 #burger-box{
 	position: relative;
+	top: 35%;
+	left: 25%;
+	margin: 0;
 	width: .89em;
 	height: .89em;
-	top: 36.5%;
-	left: 8%;
 }
 
 #search-box{
 	position: relative;
+	left: 31%;
+	margin: 0;
 	width: .94em;
 	height: .94em;
-	top: 30.9%;
-	left: 10.2%;
+}
+
+#spaceandcosmos{
+	position: relative;
+	bottom: 18.5px;
+	left: 37%;
+	width: 130px;
+	height: 25px;
 }
 
 #search-box button:hover, #burger-box button:hover{
@@ -91,14 +108,6 @@ body {
 	line-height: 1px;
 }
 
-#spaceandcosmos{
-	position: relative;
-	width: 130px;
-	height: 50%;
-	top: 27.5%;
-	left: 12.3%;
-}
-
 #spaceandcosmos a{
 	font-size: .88em;
 	font-weight: bold;
@@ -114,7 +123,6 @@ body {
 #spaceandcosmos a:hover {
 	text-decoration: underline;
 }
-
 /* --------------------------------------------------*/
 
 
@@ -122,11 +130,9 @@ body {
 /* --------------------------------------------------*/
 /* CHILD  -> navbar-sub-container*/
 #logo-box{
-	position: absolute;
-	left: 44.8%;
-	top: 30%;
 	width: 200px;
 	height: 25px;
+	margin:  2% auto auto auto;
 }
 
 #logo-box img{
@@ -141,13 +147,12 @@ body {
 /* --------------------------------------------------*/
 /* CHILD  -> navbar-sub-container*/
 #btn-box{
-	position: absolute;
+	float: right;
+	margin: .5% 21% auto auto;
 	width: 65px;
 	height: 32px;
 	border: 3px solid #6270be;
 	border-radius: 3px;
-	top: 10%;
-	right: 8%;
 }
 
 #btn-box button:hover{
@@ -169,11 +174,56 @@ body {
 /*---------------------------------------------------*/
 /*---------------------------------------------------*/
 
-/* Main container properties */
+
+/*---------------------------------------------------*/
+/*---------------------------------------------------*/
+/*---------------------------------------------------*/
+/* MAIN CONTAINER SECTION */
+/* --------------------------------------------------*/
+/* FATHER  -> main-section, article-section, prefooter-section
+				footer-section	*/
+/* CHILD  -> body*/
 #main-container{
 	position: absolute;
 	top: 40px;
 	width: 100%;
 	height: var(--HeightMainContainer);
-	background-color: gray;
+	background-color: rgb(146, 108, 108);
 }
+/* --------------------------------------------------*/
+
+/* SECTION CONTAINER - main-section, 
+article-section, prefooter-section, footer-section
+/* --------------------------------------------------*/
+/* FATHER  -> #main-container*/
+/* CHILD  -> */
+.section{
+	display: block;
+}
+
+#main-section{
+	width: 100%;
+	height: 40em;
+	background-color: #6270be;
+	border: 2px solid #313e86;
+}
+#article-section{
+	width: 100%;
+	height: 40em;
+	background-color: #c3c6d3;
+	border: 2px solid #707aaf;
+}
+#prefooter-section{
+	width: 100%;
+	height: 15em;
+	background-color: #35373f;
+	border: 2px solid #57585c;
+}
+#footer-section{
+	width: 100%;
+	height: 10em;
+	background-color: #0033ff;
+	border: 2px solid #1940db;
+}
+/* --------------------------------------------------*/
+

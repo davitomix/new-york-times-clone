@@ -5,7 +5,7 @@
 }
 
 :root{
-	--HeightMainContainer: 105em;
+	--HeightMainContainer: 800em;
 }
 
 .clearfix::after {
@@ -192,76 +192,131 @@ body {
 }
 /* --------------------------------------------------*/
 
-/* SECTION CONTAINER - main-section, 
-article-section, prefooter-section, footer-section
+
 /* --------------------------------------------------*/
-/* FATHER  -> #main-container*/
-/* CHILD  -> */
+/* --------------------------------------------------*/
+/* SECTION PROPERTY -  
+ SECTIONS AFFECTED ->	MAIN-SECTION
+ 					 	article-section, 
+						prefooter-section, 
+						footer-section
+*/
 .section{
 	display: block;
 }
+/* --------------------------------------------------*/
+/* --------------------------------------------------*/
 
+
+/* --------------------------------------------------*/
+/* --------------------------------------------------*/
+/* MAIN SECTION - main-section, 
+/* FATHER  -> #main-container*/
+/* CHILD  -> 	#header-title-1
+				#header-img-1
+				#header-caption-1
+*/
 #main-section{
 	display: block;
 	width: 100%;
-	height: 40em;
+	height: 52em;
 	background-color: #6270be;
 	border: 2px solid #313e86;
-
 }
 
-/* --------------------------------------------------*/
-/* CHILD  -> main-section*/
 
+/* --------------------------------------------------*/
+/* --------------------------------------------------*/
+
+
+/* --------------------------------------------------*/
+/* --------------------------------------------------*/
+/* ITEMS OF MAIN-SECTION
+/* CHILD  -> MAIN-SECTION*/
 #header-title-1 {
 	position: relative;
-	left: 12.5%;
-	right: 12.5%;
-	width: 75%;
+	width: 100%;
 	border: 2px solid black;
 	height: 20%;
 	background-color: lightgoldenrodyellow;
-	text-align: center;
-
 }
 
 #header-title-1 > h1 {
 	position: relative;
+	margin-left: 33%;
+	margin-right: auto;
+	margin-top: .5%;
 	top: 30px;
 	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 35px;
 }
+/* --------------------------------------------------*/
+/* --------------------------------------------------*/
 
+
+/* --------------------------------------------------*/
+/* --------------------------------------------------*/
+/* ITEMS OF MAIN-SECTION
+/* CHILD  -> MAIN-SECTION*/
 #header-img-1 {
 	position: relative;
-	left: 12.5%;
-	right: 12.5%;
-	width: 75%;
-	border: 2px solid black;
-	height: 50px;
+	width: 1024px;
+	height: 576px;
+	margin: auto;
 	background-color: lightgreen;
 }
 
+#header-img-1 img{
+	width: 100%;
+	height: 100%;
+}
+/* --------------------------------------------------*/
+/* --------------------------------------------------*/
 
-
+/* --------------------------------------------------*/
+/* --------------------------------------------------*/
+/* ITEMS OF MAIN-SECTION
+/* CHILD  -> MAIN-SECTION*/
 #header-caption-1 {
 	position: relative;
-	left: 12.5%;
-	right: 12.5%;
-	width: 75%;
+	margin: auto;
+	width: 1024px;
+	height: 5%;
 	border: 2px solid black;
-	height: 50px;
 	background-color: lightsalmon;
 }
 
+#header-caption-1 p{
+	font-size: 0.875rem;
+    color: #666;
+    line-height: 1.125rem;
+    font-weight: 300;
+    font-style: normal;
+    font-family: "nyt-cheltenham-sh",georgia,"times new roman",times,serif;
+}
+
+#header-caption-1 span{
+	font-size: 0.6875rem;
+    line-height: 16px;
+    line-height: 1rem;
+    font-weight: 400;
+}
+/* --------------------------------------------------*/
+/* --------------------------------------------------*/
+
+
+
+
+
 #article-section{
 	width: 100%;
-	height: 40em;
+	height: 200em;
 	background-color: #c3c6d3;
 	border: 2px solid #707aaf;
 }
 #prefooter-section{
 	width: 100%;
-	height: 15em;
+	height: 10em;
 	background-color: #35373f;
 	border: 2px solid #57585c;
 }

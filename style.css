@@ -5,13 +5,7 @@
 }
 
 :root{
-	--HeightMainContainer: 800em;
-	--Height-MainSection : 52em;
-	--HeightArticleSection: 30em;
-	--HeightArticle-Cont-1 : 30em;
-	--HeightArticle-1: 26.5em;
-	--HeightPreFooterSection : 10em;
-	--HeightFooter: 10em;
+	--HeightMainContainer: 120em;
 }
 
 .clearfix::after {
@@ -33,91 +27,72 @@
 body {
 	width: 100%;
 	height: var(--HeightMainContainer);
-	background-color: pink;
+	background-color: rgb(199, 172, 176);
 }
 /* --------------------------------------------------*/
 /* --------------------------------------------------*/
 /* --------------------------------------------------*/
 
-
-/*---------------------------------------------------*/
-/*---------------------------------------------------*/
-/*---------------------------------------------------*/
-/* NAV BAR SECTION */
 /* --------------------------------------------------*/
-/* FATHER  -> navbar-sub-container*/
-/* CHILD  -> body*/
-.navbar-container {
-	display: inline-block;
-	z-index: 1;
-	position: fixed;
-	width: 100%;
-	background-color: #b4aeae;
-}
 /* --------------------------------------------------*/
-  
-/* NAV BAR BOX LEFT - MID - RIGHT
-/* --------------------------------------------------*/
-/* FATHER  -> #burger, #search, #spaces and cosmos*/
-/* CHILD  -> navbar-container*/
-.navbar-sub-container {
-	float: left;
+/*FATHER OF  -> LEFT-MID-RIGHT NAVBARS*/
+#navbar-container{
 	display: block;
-	height: 40px;		
+	height: 150px;
+	width: 100%;
+	background-color: aqua;
+}
+#main-container{
+	display: block;
+	height: 150px;
+	width: 500px;
+	background-color: rgb(49, 59, 59);
+}
+/* --------------------------------------------------*/
+/* --------------------------------------------------*/
+
+
+/* --------------------------------------------------*/
+/* --------------------------------------------------*/
+/* LEFT - MID - RIGHT */
+/* NAV BOXES */ 
+#navbar-container div{
+	display: inline-block;
+	height: 50px;
 	width: 33.33%;
-	border: 0;
-	background-color: #b4aeae;	
+	background-color: rgb(15, 87, 63);
 }
-
 /* --------------------------------------------------*/
-
-/* ITEMS OF LEFT BAR BOX
 /* --------------------------------------------------*/
-/* CHILD  -> navbar-sub-container*/
-
-#burger-box{
-	position: relative;
-	top: 35%;
-	left: 25%;
-	margin: 0;
-	width: .89em;
-	height: .89em;
+/* LEFT NAV BOX */ 
+#left-box-nav{
+	display: block;
 }
 
-#search-box{
-	position: relative;
-	left: 31%;
-	margin: 0;
-	width: .94em;
-	height: .94em;
+#left-box-nav div{
+	width: 40px;
+	height: 20px;
+	background-color: bisque;
 }
 
-#spaceandcosmos{
-	position: relative;
-	bottom: 18.5px;
-	left: 37%;
-	width: 130px;
+#burger-item, #search-item{
+	float: left;
+	margin-top: 1%;
+	margin-left: 5%;
+}
+
+#burger-item img, #search-item img{
+	width: 95%;
+	height: 95%;
+}
+
+#burger-item button, #search-item button{
+	width: 25px;
 	height: 25px;
 }
 
-#search-box button:hover, #burger-box button:hover{
-	cursor: pointer;
-}
-
-#burger-box button ,#search-box button{
-	width: 100%;
-	height: 100%;
-	color: black;
-	background-color: #b4aeae;
-	border: 0;
-}
-
-#burger-box img, #search-box img{
-	width: 100%;
-	height: 100%;
-	background-color: #b4aeae;
-	color: black;
-	line-height: 1px;
+#spaceandcosmos{
+	float: left;
 }
 
 #spaceandcosmos a{
@@ -131,287 +106,28 @@ body {
 	width: 100%;
 	height: 100%;
 }
-
-#spaceandcosmos a:hover {
-	text-decoration: underline;
-}
-/* --------------------------------------------------*/
-
-
-/* ITEMS OF MID BAR BOX
-/* --------------------------------------------------*/
-/* CHILD  -> navbar-sub-container*/
-#logo-box{
-	width: 200px;
-	height: 25px;
-	margin:  2% auto auto auto;
-}
-
-#logo-box img{
-	width: 100%;
-	height: 100%;
-	margin: 0;
-}
 /* --------------------------------------------------*/
 /* --------------------------------------------------*/
 
-/* ITEMS OF RIGHT BAR BOX
+
+
+
+
+
+
+
+
+
+
 /* --------------------------------------------------*/
-/* CHILD  -> navbar-sub-container*/
-#btn-box{
+/* --------------------------------------------------*/
+/* MID NAV BOX */ 
+#mid-box-nav{
 	float: right;
-	margin: .5% 21% auto auto;
-	width: 65px;
-	height: 32px;
-	border: 3px solid #6270be;
-	border-radius: 3px;
-}
-
-#btn-box button:hover{
-	cursor: pointer;
-	background-color: #313e86;
-}
-
-#btn-box button{
-	padding-top: 13%;
-	font-size: 12px;
-	width: 100%;
-	height: 100%;
-	border: 0;
-	color: white;
-	background-color: #6270be;
-}
-/* --------------------------------------------------*/
-/*---------------------------------------------------*/
-/*---------------------------------------------------*/
-/*---------------------------------------------------*/
-
-
-/*---------------------------------------------------*/
-/*---------------------------------------------------*/
-/*---------------------------------------------------*/
-/* MAIN CONTAINER SECTION */
-/* --------------------------------------------------*/
-/* FATHER  -> main-section, article-section, prefooter-section
-				footer-section	*/
-/* CHILD  -> body*/
-#main-container{
-	position: absolute;
-	top: 40px;
-	width: 100%;
-	height: var(--HeightMainContainer);
-	background-color: rgb(146, 108, 108);
-}
-/* --------------------------------------------------*/
-
-
-/* --------------------------------------------------*/
-/* --------------------------------------------------*/
-/* SECTION PROPERTY -  
- SECTIONS AFFECTED ->	MAIN-SECTION
- 					 	article-section, 
-						prefooter-section, 
-						footer-section
-*/
-.section{
-	display: block;
 }
 /* --------------------------------------------------*/
 /* --------------------------------------------------*/
-
-
-/* --------------------------------------------------*/
-/* --------------------------------------------------*/
-/* MAIN SECTION - main-section, 
-/* FATHER  -> #main-container*/
-/* CHILD  -> 	#header-title-1
-				#header-img-1
-				#header-caption-1
-*/
-#main-section{
-	width: 100%;
-	height: var(--Height-MainSection);
-	background-color: #6270be;
-	border: 2px solid #313e86;
-}
-
-
-/* --------------------------------------------------*/
-/* --------------------------------------------------*/
-
-
-/* --------------------------------------------------*/
-/* --------------------------------------------------*/
-/* ITEMS OF MAIN-SECTION
-/* CHILD  -> MAIN-SECTION*/
-#header-title-1 {
-	position: relative;
-	width: 100%;
-	border: 2px solid black;
-	height: 20%;
-	background-color: lightgoldenrodyellow;
-}
-
-#header-title-1 > h1 {
-	position: relative;
-	margin-left: 33%;
-	margin-right: auto;
-	margin-top: .5%;
-	top: 30px;
-	font-family: Georgia, "Times New Roman", Times, serif;
-	font-size: 35px;
-}
-/* --------------------------------------------------*/
-/* --------------------------------------------------*/
-
-
-/* --------------------------------------------------*/
-/* --------------------------------------------------*/
-/* ITEMS OF MAIN-SECTION
-/* CHILD  -> MAIN-SECTION*/
-#header-img-1 {
-	position: relative;
-	width: 1024px;
-	height: 576px;
-	margin: auto;
-	background-color: lightgreen;
-}
-
-#header-img-1 img{
-	width: 100%;
-	height: 100%;
-}
-/* --------------------------------------------------*/
-/* --------------------------------------------------*/
-
-/* --------------------------------------------------*/
-/* --------------------------------------------------*/
-/* ITEMS OF MAIN-SECTION
-/* CHILD  -> MAIN-SECTION*/
-#header-caption-1 {
-	position: relative;
-	margin: auto;
-	width: 1024px;
-	height: 6%;
-	top: 1%;
-	border: 2px solid black;
-	background-color: lightsalmon;
-}
-
-#header-caption-1 p{
-	font-size: 0.875rem;
-    color: #666;
-    line-height: 1.125rem;
-    font-weight: 300;
-    font-style: normal;
-    font-family: "nyt-cheltenham-sh",georgia,"times new roman",times,serif;
-}
-
-#header-caption-1 span{
-	font-size: 0.6875rem;
-    line-height: 16px;
-    line-height: 1rem;
-    font-weight: 400;
-}
-/* --------------------------------------------------*/
-/* --------------------------------------------------*/
-
-
-
-
-
-#article-section{
-	display: inline-block;
-	width: 100%;
-	height: var(--HeightArticleSection);
-	background-color: #c3c6d3;
-	border: 2px solid #707aaf;
-}
-
-#article-container-1 {
+/* RIGHT NAV BOX */ 
+#right-box-nav{
 	float: right;
-	width: 500px;
-	height: var(--HeightArticle-Cont-1);
-	border: 1x solid black;
-	background-color: lightyellow;
 }
-
-#author {
-	float:left;
-	width: 50%;
-	height: 3.5em;
-	border: 1px solid black;
-	background-color: mediumvioletred;
-}
-
-#author p, #author a {
-	font-size: 14px;
-	font-weight: 700;
-	letter-spacing: .02em;
-	color: #121212;
-	font-family: sans-serif;	
-}
-
-#author a:hover {
-	text-decoration: none;
-}
-
-#social {
-	float: left;
-	width: 50%;
-	height: 3.5em;
-	border: 1px solid black;
-	background-color: mediumpurple;
-}
-
-#social img {
-	float: right;
-	position: relative;
-	top: 35%;
-}
-
-#article-1 {
-	position: relative;
-	width: 100%;
-	height: var(--HeightArticle-1);
-	top: 3.5em;
-	border: 1px solid black;
-	background-color: white;	
-}
-
-#article-1 h3,
-#article-1 p {
-	font-size: 1.1875rem;
-	line-height: 1.8125rem;
-	margin-bottom: 20px;	
-}
-
-/* --------------------------------------------------*/
-/* --------------------------------------------------*/
-/* ITEMS OF MAIN-SECTION
-/* FATHER -> ARTICLE-SECTION*/
-/* CHILD  -> EDITOR-CONTAINER CHILDS*/
-#editor-container{
-	float: right;
-	width: 250px;
-	height: 25%;
-	border: 1px solid black;
-	background-color: rgb(233, 18, 150);
-}
-/* --------------------------------------------------*/
-/* --------------------------------------------------*/
-
-#prefooter-section{
-	width: 100%;
-	height: var(--HeightPreFooterSection);
-	background-color: #35373f;
-	border: 2px solid #57585c;
-}
-#footer-section{
-	width: 100%;
-	height: var(--HeightFooter);
-	background-color: #0033ff;
-	border: 2px solid #1940db;
-}
-/* --------------------------------------------------*/
-

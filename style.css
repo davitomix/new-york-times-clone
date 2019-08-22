@@ -6,6 +6,7 @@
 
 :root{
 	--HeightMainContainer: 120em;
+	--ColorBottonNavBarLeft: white;
 }
 
 .clearfix::after {
@@ -38,14 +39,15 @@ body {
 /*FATHER OF  -> LEFT-MID-RIGHT NAVBARS*/
 #navbar-container{
 	display: block;
-	height: 150px;
+	position: fixed;
+	height: 50px;
 	width: 100%;
 	background-color: aqua;
 }
 #main-container{
 	display: block;
-	height: 150px;
-	width: 500px;
+	height: 1150px;
+	width: 100%;
 	background-color: rgb(49, 59, 59);
 }
 /* --------------------------------------------------*/
@@ -73,39 +75,51 @@ body {
 }
 
 #left-box-nav div{
-	width: 50px;
-	height: 30px;
+	width: 35px;
+	height: 35px;
 	background-color: bisque;
 }
 
 #burger-item {
 	float: left;
-	margin-left: 18%;
-	margin-top: 1%;
+	margin-left: 23%;
+	margin-top: .5%;
 	border: 3px solid black;
 }
 
 #search-item{
 	float: left;
-	margin-top: 1%;
+	margin-top: .5%;
 	border: 3px solid black;
 }
 
 #burger-item img, #search-item img{
-	width: 95%;
-	height: 95%;
+	width: 50%;
+	height: 50%;
+	background-color: var(--ColorBottonNavBarLeft);
 }
+
 
 #burger-item button, #search-item button{
 	float: right;
-	width: 25px;
-	height: 25px;
+	width: 100%;
+	height: 100%;
+	border: 0;
+	margin: 0;
+	background-color: white;
+}
+
+#burger-item button:hover, #search-item button:hover
+{
+	background-color: rgb(203, 203, 204);
+	cursor: pointer;
+	--ColorBottonNavBarLeft : rgb(203, 203, 204);
 }
 
 #spaceandcosmos{
 	float: left;
-	margin-top: 1%;
-	margin-left: 1%;
+	margin-top: .5%;
+	margin-left: 3%;
 	border: 3px solid black;
 }
 
@@ -113,6 +127,7 @@ body {
 	height: 25px;
 	width: 140px;
 	margin-top: 1.5%;
+	background-color: white;
 }
 
 #spaceandcosmos a{
@@ -122,9 +137,14 @@ body {
 	text-decoration: none;
 	text-transform: uppercase;
 	font-family: sans-serif;
-	background-color: #b4aeae;
+	background-color: white;
 	width: 100%;
 	height: 100%;
+}
+
+#spaceandcosmos a:hover{
+	cursor: pointer;
+	text-decoration: underline;
 }
 /* --------------------------------------------------*/
 /* --------------------------------------------------*/
@@ -144,7 +164,7 @@ body {
 
 #mid-box-nav div {
 	height: 27px;
-	background-color: brown;
+	background-color: rgb(182, 145, 145);
 	margin: 1% 33.33% 1% 33.33%;
 }
 
@@ -163,9 +183,36 @@ body {
 
 #right-box-nav div {
 	float: right;
-	width: 50px;
-	height: 25px;
-	margin-right: 25%;
-	margin-top: 1.5%;
-	background-color: cornflowerblue;
+	width: 65px;
+	height: 32px;
+	background-color: #8a8a8b;
+	border: 3px solid #6270be;
+	border-radius: 3px;
+	margin-right: 23%;
+	margin-top: 1.2%;
 }
+
+#right-box-nav button{
+	font-weight: bold;
+	font-size: 11px;
+	width: 100%;
+	height: 100%;
+	background-color:  #6270be;
+	color: white;
+	border: 0;
+}
+
+#right-box-nav button:hover, #right-box-nav div:hover{
+	cursor: pointer;
+	background-color: #313e86;
+	border-color: #313e86;
+}
+/* --------------------------------------------------*/
+/* --------------------------------------------------*/
+
+/* --------------------------------------------------*/
+/* --------------------------------------------------*/
+/* MAIN - CONTENT
+/* --------------------------------------------------*/
+/* --------------------------------------------------*/
+/* --------------------------------------------------*/

@@ -311,7 +311,7 @@ body {
 /*			 -> editors-pickbox*/
 #article-1-items-container{
 	display: block;
-	margin-left: 25.5%;
+	margin-left: 33.4%;
 	width: 1024px;
 	height: var(--HeightOfArticle1Section);
 	background-color: rgb(37, 100, 155);
@@ -540,11 +540,61 @@ body {
 }
 
 #header-2-cap p {
-	font-size: 0.65 rem;
-    line-height: 1 rem;
-    font-weight: 700;
-    font-style: normal;
-    font-family: "nyt-cheltenham",georgia,"times new roman",times,serif;
-    margin-bottom: 3px;
-    color: #333; 
+	font-size: .875rem;
+	line-height: 1.125rem;
+	font-weight: 500;
+	font-style: normal;
+	font-family: nyt-franklin,arial,helvetica,sans-serif;
+}
+
+/* --------------------------------------------------*/
+/* --------------------------------------------------*/
+/* article-1-container */ 
+/*FATHER OF  -> article-1-items-container*/
+#article-2-container{
+	display: inline-block;
+	width: 100%;
+	height: calc(var(--HeightOfArticle1Section) - 500px);
+	background-color: orange
+}
+
+/* --------------------------------------------------*/
+/* --------------------------------------------------*/
+/* art-1-textbox */ 
+/*FATHER OF  -> author*/
+/*			 -> share*/
+/*			 -> article-1*/
+#art-2-textbox{
+	margin: auto;
+	width: 682.7px;
+	height: var(--HeightOfArticle1Section);
+	background-color: #a3a255;
+}
+
+#art-2-textbox > p {
+	font-size: 1.1875rem;
+	line-height: 1.8125rem;
+	margin-bottom: 20px;
+}
+
+#art-2-textbox > p > a:hover {
+	cursor: pointer;
+    text-decoration: none;
+}
+
+#youtube {	
+	margin: 0 0 0 6%;
+}
+
+#fig-cap > p {
+	margin-right: 7px;
+	color: #666;
+	font-family: nyt-imperial,georgia,'times new roman',times,serif;
+}
+
+#fig-cap > span {
+    display: block;
+    font-size: .8rem;
+    letter-spacing: .01em;
+    color: #888;
 }

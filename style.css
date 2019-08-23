@@ -586,13 +586,24 @@ body {
 	margin: 0 0 0 6%;
 }
 
-#fig-cap > p {
+#telescope {
+	width: 600px;
+	height: 501px;
+	margin: 0 auto 0 auto;
+}
+
+#telescope > img {
+	width: 100%;
+	height: 401px;
+}
+
+.fig-cap > p {
 	margin-right: 7px;
 	color: #666;
 	font-family: nyt-imperial,georgia,'times new roman',times,serif;
 }
 
-#fig-cap > span {
+.fig-cap > span {
     display: block;
     font-size: .8rem;
     letter-spacing: .01em;

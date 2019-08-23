@@ -5,9 +5,9 @@
 }
 
 :root{
-	--HeightMainContainer: 150em;
+	--HeightMainContainer: 200em;
 	--ColorBottonNavBarLeft: white;
-	--HeightOfArticle1Section : 45em;
+	--HeightOfArticle1Section : 112em;
 }
 
 .clearfix::after {
@@ -293,13 +293,14 @@ body {
 /* --------------------------------------------------*/
 /* --------------------------------------------------*/
 /* article-1-container */ 
-/*FATHER OF  -> */
+/*FATHER OF  -> art-1-textbox*/
+/*			 -> editors-pick*/
 /*			 -> */
-/*			 -> */
+
 #article-1-container{
 	display: inline-block;
 	width: 100%;
-	height: var(--HeightOfArticle1Section);
+	height: 116em;
 	background-color: aliceblue;
 }
 
@@ -311,6 +312,13 @@ body {
 	background-color: rgb(37, 100, 155);
 }
 
+/* --------------------------------------------------*/
+/* --------------------------------------------------*/
+/* art-1-textbox */ 
+/*FATHER OF  -> author*/
+/*			 -> share*/
+/*			 -> article-1*/
+
 #art-1-textbox{
 	float: left;
 	width: 682.7px;
@@ -318,7 +326,60 @@ body {
 	background-color: rgb(192, 192, 19);
 }
 
-#editor-speak{
+#author {
+	float: left;
+	width: 50%;
+	height: 4em;
+	background-color: white;
+}
+
+#author p, #author a {
+	font-size: 14px;
+	font-weight: 700;
+	letter-spacing: .02em;
+	color: #121212;
+	font-family: sans-serif;	
+}
+
+#author a:hover {
+	text-decoration: none;
+}
+
+#share {
+	float: right;
+	width: 50%;
+	height: 4em;
+	background-color: #666
+}
+
+#share img {
+	float: right;
+	position: relative;
+	top: 35%;
+}
+
+#article-1 {
+	float: left;
+	width: 100%;
+	height: 100%;
+	background-color: aquamarine;
+}
+
+#article-1 h3,
+#article-1 p {
+	font-size: 1.1875rem;
+	line-height: 1.8125rem;
+	margin-bottom: 20px;	
+}
+
+/* --------------------------------------------------*/
+/* --------------------------------------------------*/
+/* art-1-textbox */ 
+/*FATHER OF  -> */
+/*			 -> */
+/*			 -> */
+
+#editors-pick{
 	float: right;
 	width: 341.3px;
 	height: var(--HeightOfArticle1Section);

@@ -5,8 +5,9 @@
 }
 
 :root{
-	--HeightMainContainer: 120em;
+	--HeightMainContainer: 150em;
 	--ColorBottonNavBarLeft: white;
+	--HeightOfArticle1Section : 45em;
 }
 
 .clearfix::after {
@@ -53,7 +54,7 @@ body {
 
 #main-container{
 	display: block;
-	height: 1150px;
+	height: var(--HeightMainContainer);
 	width: 100%;
 	background-color: rgb(49, 59, 59);
 }
@@ -235,7 +236,7 @@ body {
 #header-1-container {
 	display: inline-block;
 	width: 100%;
-	height: 50em;
+	height: 53.5em;
 	background-color: cadetblue;	
 }
 
@@ -261,10 +262,65 @@ body {
 	background-color: darkolivegreen;
 }
 
+#header-1-img img{
+	width: 100%;
+	height: 100%;
+}
+
 #header-1-cap {
 	width: 1024px;
 	height: 3em;
-	margin: 1% auto 1% auto;
-	padding: 1%;
+	margin: .5% auto .5% auto;
 	background-color: lightgrey;	
+}
+
+#header-1-cap p{
+	font-size: 0.875rem;
+	color: #666;
+    line-height: 1.125rem;
+    font-weight: 300;
+    font-style: normal;
+    font-family: "nyt-cheltenham-sh",georgia,"times new roman",times,serif;
+}
+
+#header-1-cap span{
+	font-size: 0.6875rem;
+    line-height: 16px;
+    line-height: 1rem;
+    font-weight: 400;
+}
+
+/* --------------------------------------------------*/
+/* --------------------------------------------------*/
+/* article-1-container */ 
+/*FATHER OF  -> */
+/*			 -> */
+/*			 -> */
+#article-1-container{
+	display: inline-block;
+	width: 100%;
+	height: var(--HeightOfArticle1Section);
+	background-color: aliceblue;
+}
+
+#article-1-items-container{
+	display: block;
+	margin: auto;
+	width: 1024px;
+	height: var(--HeightOfArticle1Section);
+	background-color: rgb(37, 100, 155);
+}
+
+#art-1-textbox{
+	float: left;
+	width: 682.7px;
+	height: var(--HeightOfArticle1Section);
+	background-color: rgb(192, 192, 19);
+}
+
+#editor-speak{
+	float: right;
+	width: 341.3px;
+	height: var(--HeightOfArticle1Section);
+	background-color: rgb(69, 182, 98);
 }

@@ -311,7 +311,7 @@ body {
 /*			 -> editors-pickbox*/
 #article-1-items-container{
 	display: block;
-	margin: auto;
+	margin-left: 25.5%;
 	width: 1024px;
 	height: var(--HeightOfArticle1Section);
 	background-color: rgb(37, 100, 155);
@@ -489,6 +489,7 @@ body {
 }
 
 #header-2-img {
+	position: relative;
 	width: 720px;
 	height: 648px;
 	margin: auto;
@@ -496,9 +497,40 @@ body {
 }
 
 #header-2-img img{
+	position: absolute;
 	width: 100%;
 	height: 100%;
 }
+
+.header-2-box{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	border: 2px solid #153d22;
+}
+
+.header-2-sub-box{
+	margin-top: 20%;
+	float: left;
+	width: 25%;
+	height: 25%;
+	background-color: #a3a255;
+}
+
+.header-2-sub-box span{
+	font-family: nyt-franklin,arial,helvetica,sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+}
+
+.header-2-sub-box p{
+	padding: 3px;
+	font-family: nyt-franklin,arial,helvetica,sans-serif;
+	font-size: 12.5px;
+	font-weight: 300;
+	color: black;
+}
+
 
 #header-2-cap {
 	width: 720px;

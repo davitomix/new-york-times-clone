@@ -7,7 +7,9 @@
 :root{
 	--HeightMainContainer: 200em;
 	--ColorBottonNavBarLeft: white;
-	--HeightOfArticle1Section : 112em;
+	--HeightOfArticle1Section : 115em;
+	--Height-share-author : 4em;
+	--HeightArticle1textbox : 111em;
 }
 
 .clearfix::after {
@@ -293,17 +295,20 @@ body {
 /* --------------------------------------------------*/
 /* --------------------------------------------------*/
 /* article-1-container */ 
-/*FATHER OF  -> art-1-textbox*/
-/*			 -> editors-pick*/
-/*			 -> */
-
+/*FATHER OF  -> article-1-items-container*/
 #article-1-container{
 	display: inline-block;
 	width: 100%;
-	height: 116em;
+	height: var(--HeightOfArticle1Section);
 	background-color: aliceblue;
 }
 
+
+/* --------------------------------------------------*/
+/* --------------------------------------------------*/
+/* article-1-items-container */ 
+/*FATHER OF  -> art-1-textbox*/
+/*			 -> editors-pickbox*/
 #article-1-items-container{
 	display: block;
 	margin: auto;
@@ -318,7 +323,6 @@ body {
 /*FATHER OF  -> author*/
 /*			 -> share*/
 /*			 -> article-1*/
-
 #art-1-textbox{
 	float: left;
 	width: 682.7px;
@@ -329,7 +333,7 @@ body {
 #author {
 	float: left;
 	width: 50%;
-	height: 4em;
+	height: var(--Height-share-author);
 	background-color: white;
 }
 
@@ -348,7 +352,7 @@ body {
 #share {
 	float: right;
 	width: 50%;
-	height: 4em;
+	height: var(--Height-share-author);
 	background-color: #666
 }
 
@@ -361,27 +365,66 @@ body {
 #article-1 {
 	float: left;
 	width: 100%;
-	height: 100%;
-	background-color: aquamarine;
+	height: var(--HeightArticle1textbox);
+	background-color: rgb(166, 173, 171);
 }
 
 #article-1 h3,
-#article-1 p {
-	font-size: 1.1875rem;
-	line-height: 1.8125rem;
-	margin-bottom: 20px;	
+#article-1 p, #article-1 a {
+	font-family: georgia,"times new roman",times,serif;
+	margin-bottom: 20px;
+	font-size: 1.2425rem;
+	line-height: 1.625rem;
+    font-weight: 400;
+    font-style: normal;
+	font-family: georgia,"times new roman",times,serif;
+}
+#article-1 a{
+	text-decoration: none;
+	color: #313e86;
+}
+#article-1 a:hover{
+	cursor: pointer;
+	text-decoration: underline;
+	color: #313e86;
 }
 
-/* --------------------------------------------------*/
-/* --------------------------------------------------*/
-/* art-1-textbox */ 
-/*FATHER OF  -> */
-/*			 -> */
-/*			 -> */
 
-#editors-pick{
-	float: right;
+
+/* --------------------------------------------------*/
+/* --------------------------------------------------*/
+/* editors-pickbox */ 
+/*FATHER OF  -> editor-info*/
+#editors-pickbox{
+	display: inline-block;
 	width: 341.3px;
 	height: var(--HeightOfArticle1Section);
-	background-color: rgb(69, 182, 98);
+	background-color: rgb(8, 59, 21);
 }
+
+.box-space{
+	width: 100%;
+	height: calc(50% - 10em);
+	background-color: rgb(16, 38, 58);
+}
+
+#editor-info{
+	width: 280px;
+	height: 20em;
+	background-color: rgb(67, 139, 202);
+}
+
+#editor-title{
+	width: 100%;
+	height: 60px;
+	background-color: rgb(152, 199, 150);
+	border: 2px solid #153d22;
+}
+
+.editor-img{
+	width: 100%;
+	height: calc(33.33% - 20px);
+	background-color: rgb(114, 207, 111);
+	border: 2px solid #153d22;
+}
+

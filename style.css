@@ -742,7 +742,7 @@ body {
 	color: rgb(153, 153, 153);
 	font-size: 0.6em;
 	line-height: 1.23em;
-	margin: 3px 0px 0px;
+	margin: 3px 6px 3px 0;
 }
 
 .morespace-column > a {
@@ -835,7 +835,8 @@ body {
 /* --------------------------------------------------*/
 /* --------------------------------------------------*/
 /* editorspick-pf-box */ 
-/*FATHER OF  -> */
+/*FATHER OF  -> editorspick-title*/
+/*			 -> editorspick-column*/
 #editorspick-pf-box{
 	float: left;
 	width: 69.9%;
@@ -845,5 +846,129 @@ body {
 	margin: 0;
 }
 
+#editorspick-title{
+	float: left;
+	width: 100%;
+	height: 60px;
+	background-color: white;
+}
 
+#editorspick-title hr{
+	color: black;
+	background-color: #121212;
+	height:  2.5px;
+}
 
+#editorspick-title > h3 {
+	float: left;
+	font-size: .975rem;
+    line-height: 1.0625rem;
+    font-weight: 700;
+    font-style: normal;
+	font-family: "nyt-franklin",arial,helvetica,sans-serif;
+	text-decoration: none;
+	color: black;
+	margin-left: 5px;
+}
+
+#editorspick-title h3:hover{
+	text-decoration: underline;
+}
+
+.editorspick-column {
+	float: left;
+	width: 32.25%;
+	height: 80%;
+	padding: 0.5%;
+	margin: 0.5%;
+	background-color: #d37d48;
+	border: 1px solid black;
+}
+
+.editorspick-column > img {
+	width: 273px;
+	height: 182px;
+}
+
+.editorspick-column > p {
+	float: right;
+	color: rgb(153, 153, 153);
+	font-size: 0.6em;
+	line-height: 1.23em;
+	margin: 3px 6px 3px 0;
+}
+
+.editorspick-column > a {
+	float: left;
+	text-decoration: none;
+	color: black;
+}
+
+.editorspick-column > a:hover {
+	color: rgb(102, 102, 102);
+}
+
+.editorspick-column > date {
+	float: left;
+	letter-spacing: 0.3px;
+	color: rgb(153, 153, 153);
+	font-weight: 500;
+	font-size: 0.75rem;
+	line-height: 2rem;
+	font-family: nyt-franklin, helvetica, arial, sans-serif;
+}
+
+/* --------------------------------------------------*/
+/* --------------------------------------------------*/
+/* footer */ 
+/*FATHER OF  -> footer-container*/
+footer {
+	width: 100%;
+	height: 500px;
+	background-color: rgb(212, 28, 59);
+}
+
+/* --------------------------------------------------*/
+/* --------------------------------------------------*/
+/* footer-container */ 
+/*FATHER OF  -> morespace-pf-box*/
+/*			  -> mostpopular-pf-box*/
+/*			  -> editorspick-pf-box*/
+#footer-container{
+	margin-left: auto;
+	margin-right: auto;
+	width: 1294px;
+	height: 480px;
+	background-color: rgb(15, 199, 8);
+}
+
+#footer-title {
+	float:left;
+	width: 100%;
+	height: 60px;
+	background-color: #a3a255;	
+}
+
+#footer-main {
+	float: left;
+	width: 100%;
+	height: calc(90% - 60px);
+	background-color: beige;
+}
+
+.footer-sub {
+	float: left;
+	width: 16.46%;
+	height: 100%;
+	padding: 0.1%;
+	margin: 0.1%;
+	border: 1px solid black;
+	background-color: cyan;
+}
+
+#footer-end {
+	float: left;
+	width: 100%;
+	height: 10%;
+	background-color: rgb(94, 51, 151);
+}

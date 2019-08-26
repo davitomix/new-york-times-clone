@@ -10,7 +10,8 @@
 	--HeightOfArticle1Section : 112.5em;
 	--Height-share-author : 4em;
 	--HeightArticle1textbox : 108.5em;
-	--HeightOfArticle2Section : 300em;
+	--HeightOfArticle2Section : 293em;
+	--HeightOfPreFooterSection : 60em;
 }
 
 .clearfix::after {
@@ -194,7 +195,7 @@ body {
 	width: 65px;
 	height: 32px;
 	background-color: #8a8a8b;
-	border: 3px solid #6270be;
+	border: 3px solid rgb(80, 138, 182);
 	border-radius: 3px;
 	margin-right: 23%;
 	margin-top: 1.2%;
@@ -205,15 +206,15 @@ body {
 	font-size: 11px;
 	width: 100%;
 	height: 100%;
-	background-color:  #6270be;
+	background-color:  rgb(80, 138, 182);
 	color: white;
 	border: 0;
 }
 
 #right-box-nav button:hover, #right-box-nav div:hover{
 	cursor: pointer;
-	background-color: #313e86;
-	border-color: #313e86;
+	background-color: rgb(50, 104, 145);
+	border-color: rgb(50, 104, 145);
 }
 /* --------------------------------------------------*/
 /* --------------------------------------------------*/
@@ -646,3 +647,90 @@ body {
 #art-2-textbox > img {
 	float: right;
 }
+
+/* --------------------------------------------------*/
+/* --------------------------------------------------*/
+/* pre-footer-container */ 
+/*FATHER OF  -> prefooter-section*/
+#pre-footer-container{
+	width: 100%;
+	height: var(--HeightOfPreFooterSection);
+	background-color: pink;
+}
+
+/* --------------------------------------------------*/
+/* --------------------------------------------------*/
+/* prefooter-section */ 
+/*FATHER OF  -> morespace-pf-box*/
+/*			  -> mostpopular-pf-box*/
+/*			  -> editorspick-pf-box*/
+#prefooter-section{
+	margin-left: auto;
+	margin-right: auto;
+	width: 65%;
+	height: var(--HeightOfPreFooterSection);
+	background-color: rgb(138, 195, 233);
+}
+
+
+/* --------------------------------------------------*/
+/* --------------------------------------------------*/
+/* morespace-pf-box */ 
+/*FATHER OF  -> */
+#morespace-pf-box{
+	float: left;
+	width: 69.9%;
+	height: 69%;
+	padding: 0;
+	margin: 0;
+}
+
+#morespace-title{
+	float: left;
+	width: 100%;
+	height: 60px;
+	background-color: #d4dbd7;
+}
+
+#morespace-title h2{
+	font-size: 1.0625rem;
+    margin-bottom: 10px;
+    line-height: 1.0625rem;
+    font-weight: 700;
+    font-style: normal;
+    font-family: "nyt-franklin",arial,helvetica,sans-serif;
+}
+
+#morespace-img-box{
+	float: left;
+	width: 100%;
+	height: calc(100% - 60px);
+	background-color: #c8b0a1;
+	border: 2px solid  #a3a255;
+}
+
+/* --------------------------------------------------*/
+/* --------------------------------------------------*/
+/* mostpopular-pf-box */ 
+/*FATHER OF  -> */
+#mostpopular-pf-box{
+	float: right;
+	width: 30%;
+	height: 100%;
+	background-color: rgb(51, 226, 57);
+	padding: 0;
+	margin: 0;
+}
+/* --------------------------------------------------*/
+/* --------------------------------------------------*/
+/* editorspick-pf-box */ 
+/*FATHER OF  -> */
+#editorspick-pf-box{
+	float: left;
+	width: 69.9%;
+	height: 30.9%;
+	background-color: rgb(89, 129, 155);
+	padding: 0;
+	margin: 0;
+}
+

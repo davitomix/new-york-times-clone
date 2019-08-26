@@ -7,9 +7,9 @@
 :root{
 	--HeightMainContainer: 600em;
 	--ColorBottonNavBarLeft: white;
-	--HeightOfArticle1Section : 115em;
+	--HeightOfArticle1Section : 112.5em;
 	--Height-share-author : 4em;
-	--HeightArticle1textbox : 111em;
+	--HeightArticle1textbox : 108.5em;
 	--HeightOfArticle2Section : 300em;
 }
 
@@ -42,7 +42,6 @@ body {
 /* --------------------------------------------------*/
 /*FATHER OF  -> LEFT-MID-RIGHT NAVBARS*/
 #navbar-container{
-	display: block;
 	position: fixed;
 	height: 50px;
 	width: 100%;
@@ -56,7 +55,6 @@ body {
 /*FATHER OF  -> pre-footer*/
 
 #main-container{
-	display: block;
 	height: var(--HeightMainContainer);
 	width: 100%;
 	background-color: rgb(131, 161, 161);
@@ -71,7 +69,6 @@ body {
 /* NAV BOXES */ 
 #navbar-container div{
 	display: inline-block;
-	
 	height: 50px;
 	width: 33.33%;
 	background-color: rgb(15, 87, 63);
@@ -83,7 +80,6 @@ body {
 #left-box-nav{
 	float: left;
 	border: 3px solid black;
-	display: block;
 }
 
 #left-box-nav div{
@@ -409,7 +405,7 @@ body {
 }
 
 #editor-info{
-	width: 280px;
+	width: 285px;
 	height: 20em;
 	background-color: rgb(67, 139, 202);
 }
@@ -586,14 +582,24 @@ body {
 	margin: 0 0 0 6%;
 }
 
-#fig-cap > p {
+#telescope {
+	width: 600px;
+	height: 501px;
+	margin: 0 auto 0 auto;
+}
+
+#telescope > img {
+	width: 100%;
+	height: 401px;
+}
+
+.fig-cap > p {
 	margin-right: 7px;
 	color: #666;
 	font-family: nyt-imperial,georgia,'times new roman',times,serif;
 }
 
-#fig-cap > span {
-    display: block;
+.fig-cap > span {
     font-size: .8rem;
     letter-spacing: .01em;
     color: #888;

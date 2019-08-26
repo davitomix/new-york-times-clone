@@ -924,8 +924,8 @@ body {
 /*FATHER OF  -> footer-container*/
 footer {
 	width: 100%;
-	height: 500px;
-	background-color: rgb(212, 28, 59);
+	height: 440px;
+	background-color: white;
 }
 
 /* --------------------------------------------------*/
@@ -938,8 +938,8 @@ footer {
 	margin-left: auto;
 	margin-right: auto;
 	width: 1294px;
-	height: 480px;
-	background-color: rgb(15, 199, 8);
+	height: 440px;
+	background-color: white;
 }
 
 #footer-title {
@@ -1018,11 +1018,26 @@ footer {
 	color: black;
 }
 
-
+.big-foot > img {
+	margin-right: 3px;
+}
 
 #footer-end {
 	float: left;
 	width: 100%;
 	height: calc(10% - 60px);
-	background-color: rgb(94, 51, 151);
+	background-color: pink;
 }
+
+#footer-end > p {
+	margin-top: 15px;
+	font-size: 0.6875rem;
+	line-height: 15px;
+	color: #999;
+	font-weight: 400;
+	font-style: normal;
+	font-family: "nyt-franklin",arial,helvetica,sans-serif;
+	border-top: 1px solid #f3f3f3;
+	padding-top: 5px;
+}
+

@@ -545,8 +545,8 @@ body {
 
 /* --------------------------------------------------*/
 /* --------------------------------------------------*/
-/* article-1-container */ 
-/*FATHER OF  -> article-1-items-container*/
+/* article-2-container */ 
+/*FATHER OF  -> article-2-items-container*/
 #article-2-container{
 	display: inline-block;
 	width: 100%;
@@ -556,15 +556,16 @@ body {
 
 /* --------------------------------------------------*/
 /* --------------------------------------------------*/
-/* art-1-textbox */ 
+/* art-2-textbox */ 
 /*FATHER OF  -> author*/
 /*			 -> share*/
-/*			 -> article-1*/
+/*			 -> article-2*/
+/*			 -> art-end*/
 #art-2-textbox{
 	margin: auto;
 	width: 682.7px;
 	height: var(--HeightOfArticle2Section);
-	background-color: #a3a255;
+	background-color: white;
 }
 
 #art-2-textbox > p {
@@ -603,4 +604,45 @@ body {
     font-size: .8rem;
     letter-spacing: .01em;
     color: #888;
+}
+
+#art-end {
+	font-family: nyt-franklin,helvetica,arial,sans-serif;
+	font-size: 0.75rem;
+	line-height: 1rem;
+	width: calc(100% - 40px);
+	max-width: 600px;
+	margin: 0 auto 1em;
+	color: #999;
+}
+
+#art-end > span > a {
+	text-decoration: none;
+	color: #999;
+}
+
+#art-end > span > a:hover {
+	text-decoration: underline;
+}
+
+#art-2-textbox button {
+	float: left;
+	font-weight: bold;
+	font-size: 11px;
+	width: 330px;
+	height: 36px;
+	background-color:rgb(80, 138, 182);
+	border: 1px solid rgb(50, 104, 145);
+	color: white;
+	border: 0;
+	border-radius: 5px;
+}
+
+#art-2-textbox button:hover {
+	cursor: pointer;
+	background-color: rgb(50, 104, 145);
+}
+
+#art-2-textbox > img {
+	float: right;
 }

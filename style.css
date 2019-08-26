@@ -11,7 +11,7 @@
 	--Height-share-author : 4em;
 	--HeightArticle1textbox : 108.5em;
 	--HeightOfArticle2Section : 293em;
-	--HeightOfPreFooterSection : 60em;
+	--HeightOfPreFooterSection : 1138px;
 }
 
 .clearfix::after {
@@ -692,13 +692,26 @@ body {
 	background-color: #d4dbd7;
 }
 
-#morespace-title h2{
-	font-size: 1.0625rem;
-    margin-bottom: 10px;
+#morespace-title hr{
+	color: black;
+	background-color: #121212;
+	height:  2.5px;
+}
+
+#morespace-title a{
+	float: left;
+	font-size: .975rem;
     line-height: 1.0625rem;
     font-weight: 700;
     font-style: normal;
-    font-family: "nyt-franklin",arial,helvetica,sans-serif;
+	font-family: "nyt-franklin",arial,helvetica,sans-serif;
+	text-decoration: none;
+	color: black;
+	margin-left: 5px;
+}
+
+#morespace-title a:hover{
+	text-decoration: underline;
 }
 
 #morespace-img-box{
@@ -764,6 +777,61 @@ body {
 	padding: 0;
 	margin: 0;
 }
+
+#title-mp-box{
+	width: 100%;
+	height: 60px;
+	background-color: #c8b0a1;
+}
+
+
+#title-mp-box hr{
+	color: black;
+	background-color: black;
+	height:  2.5px;
+}
+
+#title-mp-box h2{
+	margin-left: 5px;
+	font-size: 1.0625rem;
+    margin-bottom: 10px;
+    line-height: 1.0625rem;
+    font-weight: 700;
+    font-style: normal;
+    font-family: "nyt-franklin",arial,helvetica,sans-serif;
+}
+
+.text-mp-box{
+	width: 100%;
+	height: 100px;
+	background-color: #d37d48;
+}
+
+.text-mp-box hr{
+	color: rgb(172, 172, 172);
+	background-color: rgb(172, 172, 172);
+	height:  2.5px;
+}
+.text-mp-box h2{
+	font-size: .975rem;
+	padding: 5px;
+	margin-left: 7px;
+	line-height: 1.4375rem;
+	font-style: normal;
+	font-weight: 110;
+    font-family: nyt-cheltenham, georgia, "times new roman", times, serif;
+}
+
+.text-mp-box a{
+	text-decoration: none;
+	color: black;
+}
+
+.text-mp-box a:hover{
+	text-decoration: none;
+	color:  rgb(172, 172, 172);
+}
+
 /* --------------------------------------------------*/
 /* --------------------------------------------------*/
 /* editorspick-pf-box */ 
@@ -776,4 +844,6 @@ body {
 	padding: 0;
 	margin: 0;
 }
+
+
 

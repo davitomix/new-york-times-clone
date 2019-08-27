@@ -7,7 +7,7 @@
 :root{
 	--HeightMainContainer: 600em;
 	--ColorBottonNavBarLeft: white;
-	--HeightOfArticle1Section : 129.5em;
+	--HeightOfArticle1Section : 113.5em;
 	--Height-share-author : 4em;
 	--HeightArticle1textbox : 108.5em;
 	--HeightOfArticle2Section : 293em;
@@ -44,8 +44,9 @@ body {
 /* --------------------------------------------------*/
 /*FATHER OF  -> LEFT-MID-RIGHT NAVBARS*/
 #navbar-container{
+	z-index: 1;
 	position: fixed;
-	height: 50px;
+	height: 49px;
 	width: 100%;
 	background-color: white;
 	border-bottom: 1px solid gray;
@@ -303,8 +304,8 @@ body {
 /*FATHER OF  -> art-1-textbox*/
 /*			 -> editors-pickbox*/
 #article-1-items-container{
-	margin: 0 auto 0 auto;
-	width: 50%;
+	margin: 0 auto 0 31%;
+	width: 949.5px;
 	height: var(--HeightOfArticle1Section);
 	background-color: white;
 }
@@ -528,8 +529,7 @@ body {
 	background-color: white;	
 }
 
-
-#header-2-cap  hr{
+#header-2-cap hr {
 	background-color: gray;
 	width: 70px;	
 	height: 1px;
@@ -968,7 +968,7 @@ footer {
 	float: left;
 	width: 100%;
 	height: calc(90% - 60px);
-	background-color: beige;
+	background-color: white;
 }
 
 .footer-sub {
@@ -977,8 +977,7 @@ footer {
 	height: 100%;
 	padding: 0.1%;
 	margin: 0.1%;
-	border: 1px solid black;
-	background-color: cyan;
+	background-color: white;
 }
 
 .footer-sub ul{
@@ -1026,7 +1025,7 @@ footer {
 	float: left;
 	width: 100%;
 	height: calc(10% - 60px);
-	background-color: rgb(173, 19, 45);
+	background-color: white;
 }
 
 #footer-end > p {

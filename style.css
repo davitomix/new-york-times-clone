@@ -7,7 +7,7 @@
 :root{
 	--HeightMainContainer: 600em;
 	--ColorBottonNavBarLeft: white;
-	--HeightOfArticle1Section : 112.5em;
+	--HeightOfArticle1Section : 129.5em;
 	--Height-share-author : 4em;
 	--HeightArticle1textbox : 108.5em;
 	--HeightOfArticle2Section : 293em;
@@ -34,7 +34,7 @@
 body {
 	width: 100%;
 	height: var(--HeightMainContainer);
-	background-color: rgb(199, 172, 176);
+	background-color: white;
 }
 /* --------------------------------------------------*/
 /* --------------------------------------------------*/
@@ -47,7 +47,8 @@ body {
 	position: fixed;
 	height: 50px;
 	width: 100%;
-	background-color: aqua;
+	background-color: white;
+	border-bottom: 1px solid gray;
 }
 
 /*FATHER OF  -> header-1-container*/
@@ -59,7 +60,7 @@ body {
 #main-container{
 	height: var(--HeightMainContainer);
 	width: 100%;
-	background-color: rgb(131, 161, 161);
+	background-color: white;
 }
 /* --------------------------------------------------*/
 /* --------------------------------------------------*/
@@ -73,7 +74,6 @@ body {
 	display: inline-block;
 	height: 50px;
 	width: 33.33%;
-	background-color: rgb(15, 87, 63);
 }
 /* --------------------------------------------------*/
 /* --------------------------------------------------*/
@@ -81,26 +81,23 @@ body {
 
 #left-box-nav{
 	float: left;
-	border: 3px solid black;
 }
 
 #left-box-nav div{
 	width: 35px;
 	height: 35px;
-	background-color: bisque;
+	background-color: white;
 }
 
 #burger-item {
 	float: left;
 	margin-left: 23%;
 	margin-top: .5%;
-	border: 3px solid black;
 }
 
 #search-item{
 	float: left;
 	margin-top: .5%;
-	border: 3px solid black;
 }
 
 #burger-item img, #search-item img{
@@ -130,7 +127,6 @@ body {
 	float: left;
 	margin-top: .5%;
 	margin-left: 3%;
-	border: 3px solid black;
 }
 
 #left-box-nav #spaceandcosmos {
@@ -169,12 +165,11 @@ body {
 
 #mid-box-nav{
 	float: left;
-	border: 2px solid black;
 }
 
 #mid-box-nav div {
 	height: 27px;
-	background-color: rgb(182, 145, 145);
+	background-color:white;
 	margin: 1% 33.33% 1% 33.33%;
 }
 
@@ -195,8 +190,7 @@ body {
 	float: right;
 	width: 65px;
 	height: 32px;
-	background-color: #8a8a8b;
-	border: 3px solid rgb(80, 138, 182);
+	background-color: white;
 	border-radius: 3px;
 	margin-right: 23%;
 	margin-top: 1.2%;
@@ -238,14 +232,14 @@ body {
 	display: inline-block;
 	width: 100%;
 	height: 53.5em;
-	background-color: cadetblue;	
+	background-color: white;	
 }
 
 #header-1-title {
 	width: 100%;
 	height: 10em;
 	margin-top: 50px;
-	background-color: lightsalmon;
+	background-color: white;
 }
 
 #header-1-title > h1 {
@@ -260,7 +254,7 @@ body {
 	width: 1024px;
 	height: 576px;
 	margin: auto;
-	background-color: darkolivegreen;
+	background-color: white;
 }
 
 #header-1-img img{
@@ -272,7 +266,7 @@ body {
 	width: 1024px;
 	height: 3em;
 	margin: .5% auto .5% auto;
-	background-color: lightgrey;	
+	background-color: white;	
 }
 
 #header-1-cap p{
@@ -299,7 +293,7 @@ body {
 	display: inline-block;
 	width: 100%;
 	height: var(--HeightOfArticle1Section);
-	background-color: aliceblue;
+	background-color: white;
 }
 
 
@@ -312,7 +306,7 @@ body {
 	margin: 0 auto 0 auto;
 	width: 50%;
 	height: var(--HeightOfArticle1Section);
-	background-color: rgb(37, 100, 155);
+	background-color: white;
 }
 
 /* --------------------------------------------------*/
@@ -325,7 +319,7 @@ body {
 	float: left;
 	width: 75%;
 	height: var(--HeightOfArticle1Section);
-	background-color: rgb(192, 192, 19);
+	background-color: white;
 }
 
 #author {
@@ -351,7 +345,7 @@ body {
 	float: right;
 	width: 50%;
 	height: var(--Height-share-author);
-	background-color: #666
+	background-color: white;
 }
 
 #share img {
@@ -364,7 +358,7 @@ body {
 	float: left;
 	width: 100%;
 	height: var(--HeightArticle1textbox);
-	background-color: rgb(166, 173, 171);
+	background-color: white;
 }
 
 #article-1 h3,
@@ -397,13 +391,13 @@ body {
 	display: inline-block;
 	width: 25%;
 	height: var(--HeightOfArticle1Section);
-	background-color: rgb(8, 59, 21);
+	background-color: white;
 }
 
 .box-space{
 	width: 100%;
 	height: calc(50% - 10em);
-	background-color: rgb(16, 38, 58);
+	background-color: white;
 }
 
 #editor-info{
@@ -415,15 +409,13 @@ body {
 #editor-title{
 	width: 100%;
 	height: 60px;
-	background-color: rgb(152, 199, 150);
-	border: 2px solid #153d22;
+	background-color: white;
 }
 
 .editor-column{
 	width: 100%;
 	height: calc(33.33% - 20px);
-	background-color: rgb(114, 207, 111);
-	border: 2px solid #153d22;
+	background-color:white;
 }
 
 .editor-column > img {
@@ -459,14 +451,14 @@ body {
 	display: inline-block;
 	width: 100%;
 	height: 49.5em;
-	background-color: cadetblue;	
+	background-color: white;	
 }
 
 #header-2-title {
 	margin: auto;
 	width: 720px;
 	height: 4.5em;
-	background-color: lightsalmon;
+	background-color: white;
 }
 
 #header-2-title h2 {
@@ -504,7 +496,6 @@ body {
 	position: absolute;
 	width: 100%;
 	height: 100%;
-	border: 2px solid #153d22;
 }
 
 .header-2-sub-box{
@@ -512,7 +503,7 @@ body {
 	float: left;
 	width: 25%;
 	height: 25%;
-	background-color: #a3a255;
+	background-color: white;
 }
 
 .header-2-sub-box span{
@@ -534,7 +525,17 @@ body {
 	width: 720px;
 	height: 3em;
 	margin: .5% auto .5% auto;
-	background-color: lightgrey;	
+	background-color: white;	
+}
+
+
+#header-2-cap  hr{
+	background-color: gray;
+	width: 70px;	
+	height: 1px;
+	border: 0;
+	padding: 0;
+	margin-bottom: 15px;
 }
 
 #header-2-cap p {
@@ -553,7 +554,7 @@ body {
 	display: inline-block;
 	width: 100%;
 	height: var(--HeightOfArticle2Section);
-	background-color: orange
+	background-color: white;
 }
 
 /* --------------------------------------------------*/
@@ -656,7 +657,7 @@ body {
 #pre-footer-container{
 	width: 100%;
 	height: var(--HeightOfPreFooterSection);
-	background-color: pink;
+	background-color: white;
 }
 
 /* --------------------------------------------------*/
@@ -670,7 +671,7 @@ body {
 	margin-right: auto;
 	width: 1294px;
 	height: var(--HeightOfPreFooterSection);
-	background-color: rgb(138, 195, 233);
+	background-color: white;
 }
 
 
@@ -690,7 +691,7 @@ body {
 	float: left;
 	width: 100%;
 	height: 60px;
-	background-color: #d4dbd7;
+	background-color: white;
 }
 
 #morespace-title hr{
@@ -719,15 +720,13 @@ body {
 	float: left;
 	width: 100%;
 	height: calc(100% - 60px);
-	background-color: #c8b0a1;
-	border: 2px solid  #a3a255;
+	background-color: white;
 }
 
 .morespace-column {
 	float: left;
 	width: 32.25%;
 	height: 49%;
-	border: 1px solid black;
 	padding: 0.5%;
 	margin: 0.5%;
 	background-color:white;
@@ -740,7 +739,7 @@ body {
 
 .morespace-column > p {
 	float: right;
-	color: rgb(153, 153, 153);
+	color: white;
 	font-size: 0.6em;
 	line-height: 1.23em;
 	margin: 3px 6px 3px 0;
@@ -774,7 +773,7 @@ body {
 	float: right;
 	width: 30%;
 	height: 100%;
-	background-color: rgb(51, 226, 57);
+	background-color: white;
 	padding: 0;
 	margin: 0;
 }
@@ -782,7 +781,7 @@ body {
 #title-mp-box{
 	width: 100%;
 	height: 60px;
-	background-color: #c8b0a1;
+	background-color: white;
 }
 
 
@@ -805,7 +804,7 @@ body {
 .text-mp-box{
 	width: 100%;
 	height: 100px;
-	background-color: #d37d48;
+	background-color: white;
 }
 
 .text-mp-box hr{
@@ -813,6 +812,7 @@ body {
 	background-color: rgb(172, 172, 172);
 	height:  2.5px;
 }
+
 .text-mp-box h2{
 	font-size: .975rem;
 	padding: 5px;
@@ -842,7 +842,7 @@ body {
 	float: left;
 	width: 69.9%;
 	height: 30.9%;
-	background-color: rgb(89, 129, 155);
+	background-color: white;
 	padding: 0;
 	margin: 0;
 }
@@ -882,8 +882,7 @@ body {
 	height: 80%;
 	padding: 0.5%;
 	margin: 0.5%;
-	background-color: #d37d48;
-	border: 1px solid black;
+	background-color: white;
 }
 
 .editorspick-column > img {
@@ -947,7 +946,7 @@ footer {
 	float:left;
 	width: 100%;
 	height: 60px;
-	background-color: #a3a255;	
+	background-color: white;	
 }
 
 #footer-title hr{

@@ -1026,7 +1026,7 @@ footer {
 	float: left;
 	width: 100%;
 	height: calc(10% - 60px);
-	background-color: pink;
+	background-color: rgb(173, 19, 45);
 }
 
 #footer-end > p {

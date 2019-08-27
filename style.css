@@ -117,13 +117,7 @@ body {
 	background-color: white;
 }
 
-#burger-item img:hover
-{
-	background-color: rgb(203, 203, 204);
-	cursor: pointer;
-}
-
-#search-item img:hover
+#burger-item img:hover, #search-item img:hover
 {
 	background-color: rgb(203, 203, 204);
 	cursor: pointer;

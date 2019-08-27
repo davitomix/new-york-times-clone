@@ -101,7 +101,7 @@ body {
 	margin-top: .5%;
 }
 
-.fx-btn img, .fx-btn img{
+.fx-btn img{
 	width: 50%;
 	height: 50%;
 	background-color: var(--ColorBottonNavBarLeft);

@@ -101,7 +101,7 @@ body {
 	margin-top: .5%;
 }
 
-#burger-item img, #search-item img{
+.fx-btn img, .fx-btn img{
 	width: 50%;
 	height: 50%;
 	background-color: var(--ColorBottonNavBarLeft);
@@ -117,7 +117,7 @@ body {
 	background-color: white;
 }
 
-#left-box-nav > div > button >img:hover
+.fx-btn img:hover
 {
 	background-color: rgb(203, 203, 204);
 	cursor: pointer;

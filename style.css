@@ -14,6 +14,7 @@
 	--HeightOfPreFooterSection : 1138px;
 }
 
+
 .clearfix::after {
 	content: "";
 	display: block;
@@ -755,7 +756,7 @@ body {
 	color: rgb(102, 102, 102);
 }
 
-.morespace-column > date {
+.morespace-column > h4 {
 	float: left;
 	letter-spacing: 0.3px;
 	color: rgb(153, 153, 153);
@@ -908,7 +909,7 @@ body {
 	color: rgb(102, 102, 102);
 }
 
-.editorspick-column > date {
+.editorspick-column > h4 {
 	float: left;
 	letter-spacing: 0.3px;
 	color: rgb(153, 153, 153);
@@ -1041,3 +1042,4 @@ footer {
 	padding-top: 5px;
 }
 
+  

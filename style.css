@@ -1044,26 +1044,26 @@ footer {
 }
 
 .footer-fixed {
-	width: 100%;
-	height: 55px;
-	position: fixed;
 	background-color:white;
 	bottom: 0;
-	text-align: center;
 	border-top: 1px solid gray;
+	height: calc(55px - 1px);
+	position: fixed;
+	text-align: center;
+	width: 100%;
 }  
 
 .footer-fixed p {
 	font-size: 15px;
-    line-height: 0.6875rem;
     font-style: normal;
     font-family: "nyt-franklin",arial,helvetica,sans-serif;
 	letter-spacing: 0.05em;
+	line-height: 0.6875rem;
 	margin: 1.5% 0 1% 0;
 }
 
 .footer-fixed img {
-	position: relative;
 	bottom: 55%;
 	left: 32%;
+	position: relative;
 }

@@ -102,9 +102,9 @@ body {
 }
 
 .fx-btn img{
-	width: 50%;
-	height: 50%;
 	background-color: var(--ColorBottonNavBarLeft);
+	height: 50%;
+	width: 50%;
 }
 
 

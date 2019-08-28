@@ -34,3 +34,4 @@ Steps
 Push your solution to Github.
 
 Source: https://www.theodinproject.com/courses/html5-and-css3/lessons/positioning-and-floating-elements
+Author: David Martinez and Gerald Goh

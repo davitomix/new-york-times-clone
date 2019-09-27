@@ -20,18 +20,18 @@ Steps
 
 1. Go to the NYT article in question and have a look around.
 
-2. Follow the instructions atop the Google Homepage project to set up a Github repository for this project (of course youíll need to change the title).
+2. Follow the instructions atop the Google Homepage project to set up a Github repository for this project (of course you‚Äôll need to change the title).
 
 3. Create a new HTML document.
 
 4. Think about all the elements on the page and how they are grouped together.
 
-5. Lay out the basic structure of the page using empty semantic HTML elements that are appropriately sized and positioned. You may want to make their background colors different so you can see them. Donít forget to use your browserís developer tools (right click on the page, click ìinspect elementî)!
+5. Lay out the basic structure of the page using empty semantic HTML elements that are appropriately sized and positioned. You may want to make their background colors different so you can see them. Don‚Äôt forget to use your browser‚Äôs developer tools (right click on the page, click ‚Äúinspect element‚Äù)!
 
-6. Set up the top navigation bar (again, donít worry about making it change when you scroll down the page). How can you get it to stick to the top of the page as you scroll down?
+6. Set up the top navigation bar (again, don‚Äôt worry about making it change when you scroll down the page). How can you get it to stick to the top of the page as you scroll down?
 
-7. Fill in and position the additional sections. Donít worry about enclosing every paragraph of text in <p> tags.
+7. Fill in and position the additional sections. Don‚Äôt worry about enclosing every paragraph of text in <p> tags.
 Push your solution to Github.
-
+* [Live preview](https://geraldgsh.github.io/new-york-times-clone/)
 Source: https://www.theodinproject.com/courses/html5-and-css3/lessons/positioning-and-floating-elements
 Author: David Martinez and Gerald Goh

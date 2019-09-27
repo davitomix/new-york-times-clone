@@ -32,6 +32,8 @@ Steps
 
 7. Fill in and position the additional sections. Don’t worry about enclosing every paragraph of text in <p> tags.
 Push your solution to Github.
+  
 * [Live preview](https://geraldgsh.github.io/new-york-times-clone/)
+  
 Source: https://www.theodinproject.com/courses/html5-and-css3/lessons/positioning-and-floating-elements
 Author: David Martinez and Gerald Goh
